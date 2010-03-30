@@ -1,0 +1,20 @@
+<h1>Editing reduction</h1>
+
+<% form_for(@reduction) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @reduction %> |
+<%= link_to 'Back', reductions_path %>

@@ -1,0 +1,42 @@
+<h1>DataView#home</h1>
+<p>Find me in app/views/data_view/home.html.erb</p>
+
+<p>Select year:
+<select>
+  <option>2008</option>
+  <option>2009</option>
+</select>
+</p>
+
+<!--
+<p> Select data to Graph:
+<select>
+  <option>Comptroller Object</option>
+  <option>Comptroller Object Category Type</option>
+  <option>Vendor Payee Display Name</option>
+</select> 
+</p>
+-->
+
+
+<p>Select data to graph: <br />
+<input type="radio" name="data" value="Comptroller Object">Comptroller Object <br />
+<input type="radio" name="data" value="Comptroller Object Category">Comptroller Object Category <br />
+<input type="radio" name="data" value="Vendor Payee Display Name">Vendor Payee Display Name <br />
+</p>
+
+<p> Select agencies to compare: <br />
+<select>
+  <option>Comptroller Object</option>
+  <option>Comptroller Object Category Type</option>
+  <option>Vendor Payee Display Name</option>
+</select> 
+with <br />
+<select>
+  <option>Comptroller Object</option>
+  <option>Comptroller Object Category Type</option>
+  <option>Vendor Payee Display Name</option>
+</select>  
+</p>
+
+<h1> HI GILBERT!! </h1>

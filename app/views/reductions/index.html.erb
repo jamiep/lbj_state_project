@@ -1,0 +1,22 @@
+<h1>Listing reductions</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+
+<% for reduction in @reductions %>
+  <tr>
+    <td><%=h reduction.type %></td>
+    <td><%=h reduction.value %></td>
+    <td><%= link_to 'Show', reduction %></td>
+    <td><%= link_to 'Edit', edit_reduction_path(reduction) %></td>
+    <td><%= link_to 'Destroy', reduction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New reduction', new_reduction_path %>

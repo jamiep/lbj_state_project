@@ -1,0 +1,2350 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (62.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateReductions (20100329030907)
+  [4;35;1mSQL (45.5ms)[0m   [0mCREATE TABLE `reductions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255), `value` decimal, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100329030907')[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `agency_code`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `agency_code`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `agency_code`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `comp_obj`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `comp_obj`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `comp_obj`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comp_obj_cat_code`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `comp_obj_cat_code`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `comp_obj_cat_code`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `reductions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `reductions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `reductions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_RES`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `tceq_2008_RES`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_original`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `tceq_2008_original`[0m
+  [4;36;1mSQL (24.4ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_v2`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `tceq_2008_v2`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2009_RES`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `tceq_2009_RES`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2009_original`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `tceq_2009_original`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2009_v2`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `tceq_2009_v2`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `trans_obj_conf_indicator`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `trans_obj_conf_indicator`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `trans_obj_conf_indicator`[0m
+
+
+Processing ReductionsController#index (for 127.0.0.1 at 2010-03-28 22:10:23) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mReduction Load (1.0ms)[0m   [0;1mSELECT * FROM `reductions` [0m
+Rendering template within layouts/reductions
+Rendering reductions/index
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://localhost/reductions]
+
+
+Processing ReductionsController#new (for 127.0.0.1 at 2010-03-28 22:10:29) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mReduction Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reductions`[0m
+Rendering template within layouts/reductions
+Rendering reductions/new
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/reductions/new]
+
+
+Processing ReductionsController#create (for 127.0.0.1 at 2010-03-28 22:11:59) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"d3e352140ca5f4288d5c4c3cae008484de38a580", "reduction"=>{"value"=>"7", "type"=>"blah"}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mReduction Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reductions`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mReduction Create (0.6ms)[0m   [0;1mINSERT INTO `reductions` (`created_at`, `updated_at`, `type`, `value`) VALUES('2010-03-29 03:11:59', '2010-03-29 03:11:59', NULL, 7)[0m
+  [4;35;1mSQL (43.5ms)[0m   [0mCOMMIT[0m
+Redirected to #<Reduction:0xb724a830>
+Completed in 57ms (DB: 46) | 302 Found [http://localhost/reductions]
+
+
+Processing ReductionsController#show (for 127.0.0.1 at 2010-03-28 22:11:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mReduction Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `reductions`[0m
+  [4;35;1mReduction Load (1.1ms)[0m   [0mSELECT * FROM `reductions` WHERE (`reductions`.`id` = 1) [0m
+Rendering template within layouts/reductions
+Rendering reductions/show
+Completed in 15ms (View: 6, DB: 4) | 200 OK [http://localhost/reductions/1]
+
+
+Processing ReductionsController#index (for 127.0.0.1 at 2010-03-28 22:12:35) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mReduction Load (1.1ms)[0m   [0;1mSELECT * FROM `reductions` [0m
+Rendering template within layouts/reductions
+Rendering reductions/index
+  [4;35;1mReduction Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `reductions`[0m
+Completed in 15ms (View: 6, DB: 4) | 200 OK [http://localhost/reductions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:14:19) [GET]
+
+
+ActionController::RoutingError (No route matches "/reducer" with {:method=>:get}):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:14:29) [GET]
+
+
+ActionController::RoutingError (No route matches "/reducer/home" with {:method=>:get}):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:15:05) [GET]
+
+
+ActionController::RoutingError (No route matches "/reducers/home" with {:method=>:get}):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:15:11) [GET]
+
+
+ActionController::RoutingError (No route matches "/reducer_controller/home" with {:method=>:get}):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ReducerController#home (for 127.0.0.1 at 2010-03-28 22:15:29) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering reducer/home
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/reducer/home]
+
+
+Processing ReducerController#reduce_by_year (for 127.0.0.1 at 2010-03-28 22:15:39) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering reducer/reduce_by_year
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/reducer/reduce_by_year]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 22:45:31) [GET]
+
+
+ActionController::RoutingError (No route matches "/data_view/home/" with {:method=>:get}):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 22:45:51) [GET]
+  [4;36;1mSQL (7.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 2, DB: 15) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:03:33) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:08:33) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:08:51) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:09:33) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:11:25) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:17:28) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:17:31) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-28 23:17:35) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/data_view/home/]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:13:49) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:36:45) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:37:49) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:39:30) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:45:08) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 2) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:45:36) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 8ms (View: 6, DB: 8) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:46:28) [GET]
+  [4;36;1mSQL (119.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 19ms (View: 17, DB: 120) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:46:28) [GET]
+  [4;36;1mSQL (345.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (170.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 516) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:46:37) [GET]
+  [4;36;1mSQL (152.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (306.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 458) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:46:38) [GET]
+  [4;36;1mSQL (150.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (155.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 305) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:02) [GET]
+  [4;36;1mSQL (156.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (151.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 308) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:13) [GET]
+  [4;36;1mSQL (37.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 38) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:14) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:14) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:14) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:14) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:14) [GET]
+  [4;36;1mSQL (102.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 17ms (View: 7, DB: 107) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:15) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:15) [GET]
+  [4;36;1mSQL (156.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (464.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 621) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:17) [GET]
+  [4;36;1mSQL (9.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (366.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 376) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:47:33) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 7ms (View: 4, DB: 4) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:48:05) [GET]
+  [4;36;1mSQL (19.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+ERROR: compiling _run_erb_app47views47data_view47home46html46erb RAISED compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+..., options_for_select(@years) ; @output_buffer.concat "\n\n"
+                              ^
+Function body:           def _run_erb_app47views47data_view47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>DataView#home</h1>\n<p>Find me in app/views/data_view/home.html.erb</p>\n\n<h1>ENTER DATA</h1>\n\n"
+
+
+
+
+;  form_tag do ; @output_buffer.concat "\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object, "Comptroller Object4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object Category") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object_category, "Comptroller Object Category4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Vendor Payee Display Name") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_VPDN, "Vendor Payee Display Name") ).to_s); @output_buffer.concat " <br />\n\n"
+
+;  select_tag(:year, options_for_select(@years) ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( options_for_select([['Lisbon', 1], ['Madrid', 2]], 2) ).to_s); @output_buffer.concat " \n\n"
+
+;  end ; @output_buffer.concat "\n<p>Select year:\n<select>\n  <option>2008</option>\n  <option>2009</option>\n</select>\n</p>\n\n<!--\n<p> Select data to Graph:\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \n</p>\n-->\n\n\n<p>Select data to graph: <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object\">Comptroller Object <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object Category\">Comptroller Object Category <br />\n<input type=\"radio\" name=\"data\" value=\"Vendor Payee Display Name\">Vendor Payee Display Name <br />\n</p>\n\n<p> Select agencies to compare: <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \nwith <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select>  \n</p>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:60:in `compile!'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+..., options_for_select(@years) ; @output_buffer.concat "\n\n"
+                              ^) on line #14 of app/views/data_view/home.html.erb:
+11: <%= radio_button_tag(:data, "Vendor Payee Display Name") %>
+12:   <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+13: 
+14: <% select_tag(:year, options_for_select(@years) %>
+15: 
+16: <%= options_for_select([['Lisbon', 1], ['Madrid', 2]], 2) %> 
+17: 
+
+    app/views/data_view/home.html.erb:60:in `compile!'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (41.1ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:48:18) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 2) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:48:37) [GET]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+ERROR: compiling _run_erb_app47views47data_view47home46html46erb RAISED compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+...bon', 1], ['Madrid', 2]], 2) ; @output_buffer.concat "\n\n"
+                              ^
+Function body:           def _run_erb_app47views47data_view47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>DataView#home</h1>\n<p>Find me in app/views/data_view/home.html.erb</p>\n\n<h1>ENTER DATA</h1>\n\n"
+
+
+
+
+;  form_tag do ; @output_buffer.concat "\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object, "Comptroller Object4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object Category") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object_category, "Comptroller Object Category4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Vendor Payee Display Name") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_VPDN, "Vendor Payee Display Name") ).to_s); @output_buffer.concat " <br />\n\n"
+
+;  select_tag(:year, options_for_select([['Lisbon', 1], ['Madrid', 2]], 2) ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat((  ).to_s); @output_buffer.concat " \n\n"
+
+;  end ; @output_buffer.concat "\n<p>Select year:\n<select>\n  <option>2008</option>\n  <option>2009</option>\n</select>\n</p>\n\n<!--\n<p> Select data to Graph:\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \n</p>\n-->\n\n\n<p>Select data to graph: <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object\">Comptroller Object <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object Category\">Comptroller Object Category <br />\n<input type=\"radio\" name=\"data\" value=\"Vendor Payee Display Name\">Vendor Payee Display Name <br />\n</p>\n\n<p> Select agencies to compare: <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \nwith <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select>  \n</p>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:60:in `compile!'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+...bon', 1], ['Madrid', 2]], 2) ; @output_buffer.concat "\n\n"
+                              ^) on line #14 of app/views/data_view/home.html.erb:
+11: <%= radio_button_tag(:data, "Vendor Payee Display Name") %>
+12:   <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+13: 
+14: <% select_tag(:year, options_for_select([['Lisbon', 1], ['Madrid', 2]], 2) %>
+15: 
+16: <%=  %> 
+17: 
+
+    app/views/data_view/home.html.erb:60:in `compile!'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (37.2ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.5ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:48:42) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:13) [GET]
+  [4;36;1mSQL (274.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+
+
+ActionView::TemplateError (undefined method `stringify_keys' for 2:Fixnum) on line #14 of app/views/data_view/home.html.erb:
+11: <%= radio_button_tag(:data, "Vendor Payee Display Name") %>
+12:   <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+13: 
+14: <% select_tag(:year, options_for_select(@years), 2) %>
+15: 
+16: <% end %>
+17: <p>Select year:
+
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_tag_helper.rb:81:in `select_tag'
+    app/views/data_view/home.html.erb:14
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `call'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `capture'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:129:in `with_output_buffer'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `capture'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_tag_helper.rb:460:in `form_tag_in_block'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_tag_helper.rb:39:in `form_tag'
+    app/views/data_view/home.html.erb:6
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (39.1ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.5ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:21) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+ERROR: compiling _run_erb_app47views47data_view47home46html46erb RAISED compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+...ptions_for_select(@years, 2) ; @output_buffer.concat "\n\n"
+                              ^
+Function body:           def _run_erb_app47views47data_view47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>DataView#home</h1>\n<p>Find me in app/views/data_view/home.html.erb</p>\n\n<h1>ENTER DATA</h1>\n\n"
+
+
+
+
+;  form_tag do ; @output_buffer.concat "\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object, "Comptroller Object4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object Category") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object_category, "Comptroller Object Category4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Vendor Payee Display Name") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_VPDN, "Vendor Payee Display Name") ).to_s); @output_buffer.concat " <br />\n\n"
+
+;  select_tag(:year, options_for_select(@years, 2) ; @output_buffer.concat "\n\n"
+
+;  end ; @output_buffer.concat "\n<p>Select year:\n<select>\n  <option>234523</option>\n  <option>13452</option>\n</select>\n</p>\n\n<!--\n<p> Select data to Graph:\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \n</p>\n-->\n\n\n<p>Select data to graph: <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object\">Comptroller Object <br />\n<input type=\"radio\" name=\"data\" value=\"Comptroller Object Category\">Comptroller Object Category <br />\n<input type=\"radio\" name=\"data\" value=\"Vendor Payee Display Name\">Vendor Payee Display Name <br />\n</p>\n\n<p> Select agencies to compare: <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select> \nwith <br />\n<select>\n  <option>Comptroller Object</option>\n  <option>Comptroller Object Category Type</option>\n  <option>Vendor Payee Display Name</option>\n</select>  \n</p>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:58:in `compile!'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:14: syntax error, unexpected ';', expecting ')'
+...ptions_for_select(@years, 2) ; @output_buffer.concat "\n\n"
+                              ^) on line #14 of app/views/data_view/home.html.erb:
+11: <%= radio_button_tag(:data, "Vendor Payee Display Name") %>
+12:   <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+13: 
+14: <% select_tag(:year, options_for_select(@years, 2) %>
+15: 
+16: <% end %>
+17: <p>Select year:
+
+    app/views/data_view/home.html.erb:58:in `compile!'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (41.8ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.5ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:30) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 19ms (View: 17, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:56) [GET]
+  [4;36;1mSQL (23.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (133.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 157) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:58) [GET]
+  [4;36;1mSQL (273.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (134.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 409) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:49:58) [GET]
+  [4;36;1mSQL (602.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (301.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 904) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:09) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:10) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:10) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:11) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:11) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:11) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:18) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:51:40) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:52:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:56:50) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 18:59:10) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 18:59:26) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+
+
+ActionView::TemplateError (undefined local variable or method `action' for #<ActionView::Base:0xb7016014>) on line #6 of app/views/data_view/home.html.erb:
+3: 
+4: <h1>ENTER DATA</h1>
+5: 
+6: <% form_tag action => 'view'  do %>
+7: <%= radio_button_tag(:data, "Comptroller Object") %>
+8:   <%= label_tag(:data_comptroller_object, "Comptroller Object4") %> <br />
+9: <%= radio_button_tag(:data, "Comptroller Object Category") %>
+
+    app/views/data_view/home.html.erb:6
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (47.7ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:00:44) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:01:10) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+
+
+ActionView::TemplateError (undefined local variable or method `submit_button' for #<ActionView::Base:0xb7025398>) on line #20 of app/views/data_view/home.html.erb:
+17: <%= select_tag :agency1, options_for_select(@agencies) %>
+18: <%= select_tag :agency2, options_for_select(@agencies) %>
+19: 
+20: <%= submit_button %>
+21: 
+22: <% end %>
+
+    app/views/data_view/home.html.erb:20
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `call'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `capture'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:129:in `with_output_buffer'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/capture_helper.rb:36:in `capture'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_tag_helper.rb:460:in `form_tag_in_block'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_tag_helper.rb:39:in `form_tag'
+    app/views/data_view/home.html.erb:6
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (40.1ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:01:35) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:01:56) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:02:02) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:02:15) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"CO", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2008"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:02:27) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"CO", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2008"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:07:04) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"CO", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2008"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:07:12) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"CO", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:07:40) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:07:43) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"CO", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:07:53) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"COCT", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:08:23) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"VPDN", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:09:29) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:09:31) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"VPDN", "method"=>"GET", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view?method=GET]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:09:44) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"VPDN", "method"=>"GET", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view?method=GET]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:10:22) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:10:23) [POST]
+  Parameters: {"data"=>"Comptroller Object", "agency1"=>"COCT", "commit"=>"Save changes", "agency2"=>"VPDN", "method"=>"get", "authenticity_token"=>"2859c626e5c76db549bd41bfd89b71050b11d557", "year"=>"2009"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view?method=get]
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:11:05) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+ERROR: compiling _run_erb_app47views47data_view47home46html46erb RAISED compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag {:action => 'view'}, :method => 'get'  do...
+                       ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected ',', expecting kEND
+... form_tag {:action => 'view'}, :method => 'get'  do ; @outpu...
+                              ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected kDO, expecting kEND
+... 'view'}, :method => 'get'  do ; @output_buffer.concat "\n"
+                              ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:27: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47data_view47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>DataView#home</h1>\n<p>Find me in app/views/data_view/home.html.erb</p>\n\n<h1>ENTER DATA</h1>\n\n"
+
+
+
+
+;  form_tag {:action => 'view'}, :method => 'get'  do ; @output_buffer.concat "\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object, "Comptroller Object4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Comptroller Object Category") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_comptroller_object_category, "Comptroller Object Category4") ).to_s); @output_buffer.concat " <br />\n"
+; @output_buffer.concat(( radio_button_tag(:data, "Vendor Payee Display Name") ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( label_tag(:data_VPDN, "Vendor Payee Display Name") ).to_s); @output_buffer.concat " <br />\n\n"
+
+; @output_buffer.concat(( select_tag :year, options_for_select(@years) ).to_s); @output_buffer.concat "\n\n<p> Select agencies to compare: </p>\n"
+
+
+; @output_buffer.concat(( select_tag :agency1, options_for_select(@agencies) ).to_s); @output_buffer.concat " with <br />\n"
+; @output_buffer.concat(( select_tag :agency2, options_for_select(@agencies) ).to_s); @output_buffer.concat "\n\n<br />\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( submit_tag ).to_s); @output_buffer.concat "\n\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:27:in `compile!'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected tASSOC, expecting '}'
+;  form_tag {:action => 'view'}, :method => 'get'  do...
+                       ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected ',', expecting kEND
+... form_tag {:action => 'view'}, :method => 'get'  do ; @outpu...
+                              ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:6: syntax error, unexpected kDO, expecting kEND
+... 'view'}, :method => 'get'  do ; @output_buffer.concat "\n"
+                              ^
+/v/filer4b/v38q001/parkjk5/Desktop/state/app/views/data_view/home.html.erb:27: syntax error, unexpected kENSURE, expecting $end) on line #6 of app/views/data_view/home.html.erb:
+3: 
+4: <h1>ENTER DATA</h1>
+5: 
+6: <% form_tag {:action => 'view'}, :method => 'get'  do %>
+7: <%= radio_button_tag(:data, "Comptroller Object") %>
+8:   <%= label_tag(:data_comptroller_object, "Comptroller Object4") %> <br />
+9: <%= radio_button_tag(:data, "Comptroller Object Category") %>
+
+    app/views/data_view/home.html.erb:27:in `compile!'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (85.3ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-03-29 19:11:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/home
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:11:21) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:11:57) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"LLEGE", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering data_view/view
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=LLEGE&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:21:57) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecord Load (0.0ms)[0m   [0;1mMysql::Error: Table 'akdang88_cs349_spr10.records' doesn't exist: SELECT * FROM `records` LIMIT 1[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'akdang88_cs349_spr10.records' doesn't exist: SELECT * FROM `records`  LIMIT 1):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract_adapter.rb:188:in `log'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:309:in `execute'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:563:in `select'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:81:in `cache_sql'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:635:in `find_by_sql'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1490:in `find_every'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1452:in `find_initial'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:587:in `find'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:597:in `first'
+    /app/controllers/data_view_controller.rb:9:in `view'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (35.1ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:22:56) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `use_table' for Record(Table doesn't exist):Class):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1833:in `method_missing'
+    /app/models/record.rb:2
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:382:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:382:in `load_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:381:in `load_file'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:256:in `require_or_load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:427:in `load_missing_constant'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:77:in `const_missing'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:89:in `const_missing'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:95:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:95:in `const_missing'
+    /app/controllers/data_view_controller.rb:9:in `view'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (79.6ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:23:15) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecord Load (0.0ms)[0m   [0mMysql::Error: Table 'akdang88_cs349_spr10.records' doesn't exist: SELECT * FROM `records` LIMIT 1[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'akdang88_cs349_spr10.records' doesn't exist: SELECT * FROM `records`  LIMIT 1):
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract_adapter.rb:188:in `log'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:309:in `execute'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:563:in `select'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:81:in `cache_sql'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:635:in `find_by_sql'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1490:in `find_every'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1452:in `find_initial'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:587:in `find'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:597:in `first'
+    /app/controllers/data_view_controller.rb:9:in `view'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /lusr/opt/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (34.5ms)
+Rendered /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.6ms)
+Rendering /lusr/opt/ruby-1.8.7-p174/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:23:58) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecord Load (1.6ms)[0m   [0;1mSELECT * FROM `tceq_2008_v2` LIMIT 1[0m
+  [4;35;1mRecord Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tceq_2008_v2`[0m
+Rendering data_view/view
+Completed in 12ms (View: 2, DB: 4) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:24:37) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRecord Load (1.5ms)[0m   [0;1mSELECT * FROM `tceq_2008_v2` LIMIT 1[0m
+Rendering data_view/view
+Completed in 16ms (View: 2, DB: 2) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:28:14) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecord Load (2.0ms)[0m   [0mSELECT * FROM `tceq_2008_v2` LIMIT 10[0m
+Rendering data_view/view
+  [4;36;1mRecord Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_v2`[0m
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:28:23) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecord Load (2.0ms)[0m   [0mSELECT * FROM `tceq_2008_v2` LIMIT 10[0m
+Rendering data_view/view
+  [4;36;1mRecord Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_v2`[0m
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:28:38) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "agency1"=>"CO", "commit"=>"Save changes", "agency2"=>"CO", "year"=>"2008"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecord Load (2.1ms)[0m   [0mSELECT * FROM `tceq_2008_v2` LIMIT 10[0m
+Rendering data_view/view
+  [4;36;1mRecord Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_v2`[0m
+Completed in 11ms (View: 5, DB: 3) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]

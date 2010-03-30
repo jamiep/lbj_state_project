@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fiscal_year: 1
+  trans_date: 2010-03-29 19:20:08
+  agency_name: MyString
+  comp_obj_name: MyString
+  obj_type: MyString
+  comp_obj_cat_type: MyString
+  trans_amt: 9.99
+  trans_obj_conf_indicator: MyString
+  vendor_payee_disp_name: MyString
+
+two:
+  fiscal_year: 1
+  trans_date: 2010-03-29 19:20:08
+  agency_name: MyString
+  comp_obj_name: MyString
+  obj_type: MyString
+  comp_obj_cat_type: MyString
+  trans_amt: 9.99
+  trans_obj_conf_indicator: MyString
+  vendor_payee_disp_name: MyString

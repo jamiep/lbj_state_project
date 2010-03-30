@@ -1,0 +1,25 @@
+<h1>DataView#home</h1>
+<p>Find me in app/views/data_view/home.html.erb</p>
+
+<h1>ENTER DATA</h1>
+
+<% form_tag({:action => 'view'}, :method => 'get')  do %>
+<%= radio_button_tag(:data, "Comptroller Object") %>
+  <%= label_tag(:data_comptroller_object, "Comptroller Object4") %> <br />
+<%= radio_button_tag(:data, "Comptroller Object Category") %>
+  <%= label_tag(:data_comptroller_object_category, "Comptroller Object Category4") %> <br />
+<%= radio_button_tag(:data, "Vendor Payee Display Name") %>
+  <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+
+<%= select_tag :year, options_for_select(@years) %>
+
+<p> Select agencies to compare: </p>
+<%= select_tag :agency1, options_for_select(@agencies) %> with <br />
+<%= select_tag :agency2, options_for_select(@agencies) %>
+
+<br />
+<br />
+
+<%= submit_tag %>
+
+<% end %>
