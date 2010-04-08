@@ -1,0 +1,13 @@
+Column		Description					See Code Table
+------		-----------		
+	  	
+1  		Fiscal Year					No
+2  		Transaction Date				No
+3	 	Agency Code 					Agency_CD.txt 
+4  		Comptroller Object Code				CompObj.txt
+5  		Comptroller Object Category Code		CompObjCategory_CD.tx
+6  		Transaction Amount				No
+7  		Transaction Object Confidential Indicator	TranObjConf_IND.txt
+8  		Vendor Payee Display Name			VendorPayeeDispName.txt
+
+

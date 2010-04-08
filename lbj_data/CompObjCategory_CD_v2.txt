@@ -1,0 +1,22 @@
+00|Interfund Transfers/Other                         
+01|Salaries and Wages                                
+02|Employee Benefits                                 
+03|Supplies and Materials                            
+04|Other Expenditures                                
+05|Public Assistance Payments                        
+06|Intergovernmental Payments                        
+07|Lottery Winnings Paid                             
+08|Travel                                            
+09|Professional Service and Fees                     
+10|Payment on Principal Debt Service                 
+11|Payment of Interest Debt Service                  
+12|Highway Construction                              
+13|Capital Outlay                                    
+14|Repairs and Maintenance                           
+15|Communications and Utilities                      
+16|Rentals and Leases                                
+17|Claims and Judgments                              
+18|Cost of Goods Sold                                
+19|Printing and Reproduction                         
+20|Investments                                       
+21|Other Disbursements                               

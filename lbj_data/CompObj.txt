@@ -1,0 +1,1470 @@
+3000|Revenue Budget|R
+3001|Federal Receipts Matched – Transportation Programs|R
+3002|Federal Receipts Not Matched – Transportation Programs|R
+3003|Motor Vehicles Sales and Use Tax – Motor Carriers|R
+3004|Motor Vehicle Sales and Use Tax|R
+3005|Motor Vehicle Rental Tax|R
+3006|Motor Vehicle Use Tax – Direct|R
+3007|Gasoline Tax|R
+3008|Diesel Fuel Tax|R
+3009|Liquefied Gas Tax|R
+3010|Motor Fuel Lubricants Sales Tax|R
+3011|Fuel Alcohol Equipment Registration|R
+3012|Motor Vehicle Certificates|R
+3013|Motor Vehicle Sales Tax Permit|R
+3014|Motor Vehicle Registration Fees|R
+3015|Motor Fuel Mixture Testing Fee|R
+3016|Motor Vehicle Sales and Use Tax – Seller Financed Motor Vehicles|R
+3017|Tow Truck Registration|R
+3018|Special Vehicle Registrations|R
+3019|Motor Vehicle Registration – County|R
+3020|Motor Vehicle Inspection Fees|R
+3021|Equipment Testing Fees (Ignition Interlock Device)|R
+3022|Assigned Vehicle Identification Number Fees|R
+3023|Inspection Fees – Salvage to Regular Title|R
+3024|Driver License Point Surcharges|R
+3025|Driver License Fees|R
+3026|Voluntary Driver License Fee for Blindness, Screening and Treatment|R
+3027|Driver Record Information Fees|R
+3028|Driver Information Symbols|R
+3029|Motorcycle Education Course|R
+3030|Commercial Driver Training School Fees|R
+3031|Automobile Clubs Registration|R
+3032|School Fund Benefit Fee on Diesel Fuel|R
+3033|Road Utility District Fees|R
+3034|LPG Delivery Fees|R
+3035|Commercial Transportation Fees|R
+3036|Motor Vehicle Complaints/Protests|R
+3037|Travel for Inspection of Motor Carrier Records|R
+3038|Motor Carrier – Proof of Insurance Filing Fee|R
+3039|Permit and Administrative Fees – Excess Weight Vehicles per Out-of-State Agreement|R
+3040|Trucker Lease Agreement Act Fees|R
+3041|Voluntary Driver License Fee – Donor Education, Awareness and Registry|R
+3042|Motor Vehicle Assessment – Young Farmer Program|R
+3043|Antifreeze Registration Fees|R
+3044|Excess Turnpike Revenue from Regional Mobility Authorities|R
+3045|Railroad Commission Service Fees|R
+3046|State Highway Toll Project Revenue|R
+3047|Comprehensive Toll Development Agreement Receipts (Concessions - Private)|R
+3048|Surplus Toll Agreement Receipts (Concessions – Public)|R
+3050|Abandoned Motor Vehicles|R
+3052|Highway Beautification Fees|R
+3053|Outdoor Signs on Rural Roads|R
+3055|Excess Fines from Speeding Violations|R
+3056|Motor Vehicle Safety Responsibility Violations|R
+3057|Motor Carrier Act Penalties|R
+3058|D.W.I. – Educational Program Approval|R
+3060|Turnpike Policing|R
+3061|Railroad Crossing Warning Signal Dismantling Fees|R
+3062|Rail Safety Program Fees|R
+3065|Road Bond Retirement Receipts|R
+3070|Air Navigation Obstruction Control Permit|R
+3079|Petroleum Product Delivery Fees-Comptroller|R
+3080|Petroleum Product Delivery Fees|R
+3081|Equipment Lease to County Automated Registration and Title System|R
+3100|Interest on Retail Credit Sales|R
+3101|Prepayments of Limited Sales and Use Tax|R
+3102|Limited Sales and Use Tax|R
+3103|Limited Sales and Use Tax – State|R
+3104|Manufactured Housing Sales and Use Tax|R
+3105|Discount for Sales Tax – State Agencies and Higher Education|R
+3106|City Sales Tax Service Fees|R
+3107|Local MTA Sales Tax Service Fees|R
+3108|County Sales Tax Service Fees|R
+3109|Local SPD Sales Tax Service Fees|R
+3110|Inheritance Tax|R
+3111|Boat and Boat Motor Sales and Use Tax|R
+3112|Tax Collections - Contracted Out of State Audit|R
+3114|Escheated Estates|R
+3120|Property Rights Claims|R
+3123|Volatile Chemical Sales Permit|R
+3124|Sales Tax Permit Fee|R
+3125|Prior Year Sales Tax Permit Fees|R
+3126|Concealed Handgun Fees|R
+3127|Fireworks Tax|R
+3128|Delinquency Charge for Revolving Credit Accounts|R
+3129|Correctional Facilities Housing Out-of-State Inmates|R
+3130|Franchise/Business Margins Tax|R
+3131|Franchise Tax|R
+3133|General Business Filing Fees|R
+3134|Private Sector Prison Industries Oversight Receipts|R
+3135|Occupation Tax|R
+3136|Cement Tax|R
+3137|Racing Association ATM Receipts|R
+3138|Discounts for Hotel Occupancy Tax|R
+3139|Hotel Occupancy Tax|R
+3140|Bedding Stamps|R
+3141|Bedding Permit Fees|R
+3142|Food Service Worker Training|R
+3143|Industrial Alcohol Manufacture|R
+3144|Animal Shelter Personnel Training|R
+3145|Racing Commission Reimbursement to General Revenue – Administration and Enforcement|R
+3146|Combative Sports Admissions Tax|R
+3147|Combative Sports Licenses|R
+3148|Circus/Carnival/Zoo Licensing|R
+3149|Amusement Ride Inspection|R
+3150|Coin-Operated Amusement Machine Tax|R
+3151|Coin-Operated Machine Business License Fee|R
+3152|Bingo Operators/Lessors|R
+3153|Bingo Equipment|R
+3154|Bingo Tax Service Fees|R
+3155|Bingo Investigation or Audit|R
+3156|Bingo Tax – State|R
+3157|Loan Administration Fees|R
+3158|Manufactured Housing Training Fees|R
+3159|Manufactured Housing Certificate of Title|R
+3160|Manufactured and Industrialized Housing Registration License Fees|R
+3161|Manufactured and Industrialized Housing Inspection Fees|R
+3162|Travel Fees for Manufactured and Industrialized Housing Inspections|R
+3163|Penalties for Manufactured Housing Violations|R
+3164|Boiler Inspection Fees|R
+3165|Travel Fees for Boiler Inspections|R
+3166|Bingo Rental Tax|R
+3167|Economic Development Fees|R
+3168|Foreign Sales Corporation Fees|R
+3169|Employer Liability – Unemployment Compensation|R
+3170|Bingo Prize Fees|R
+3171|Professional Fees, H.B. 11 and H.B. 3442, General Revenue Increase|R
+3172|Financial Institution Regulation|R
+3173|Credit Service and Charitable Organizations Registration|R
+3174|Unlicensed Creditors Registration|R
+3175|Professional Fees|R
+3176|Lottery License Application Fees|R
+3177|Lottery Ticket Sales|R
+3178|Lottery Security Proceeds|R
+3179|Lotto On-Line Ticket Sales|R
+3180|Health Regulation Fees|R
+3188|Race Track Licenses – Horse|R
+3189|Racing and Wagering Licenses|R
+3190|Race Track Licenses – Greyhound|R
+3191|Race Track Application Fees – Horse|R
+3192|Race Track Application Fees – Greyhound|R
+3193|Breakage – Horse Racing|R
+3194|Outstanding Wagering Tickets (Outs) – Horses and Greyhounds|R
+3195|Additional Legal Services Fee|R
+3196|Racing Pool – State Share – Greyhound (Simulcast Pari-Mutuel)|R
+3197|Breakage – Greyhound Racing|R
+3198|Racing Pool – State Share – Greyhound (Live Pari-Mutuel)|R
+3199|Racing Pool – State Share – Horse (Live Pari-Mutuel)|R
+3200|Racing Pool – State Share – Horse (Simulcast Pari-Mutuel)|R
+3201|Insurance Premium Taxes|R
+3203|Insurance Maintenance Taxes|R
+3204|Insurance Administrative Services Tax|R
+3205|Office of Public Insurance Counsel (OPIC) Assessment|R
+3206|Insurance Company Fees|R
+3207|Insurance Maintenance Tax Surcharge/Workers’ Compensation Debt Retirement|R
+3208|Insurance Assessment for Volunteer Fire Departments|R
+3210|Insurance Agents Licenses|R
+3211|Texas Workers’ Compensation Self-Insurance Application Fees|R
+3212|Texas Workers’ Compensation Self-Insurance Regulatory Fees|R
+3213|Catastrophe Property Insurance Pool Fees|R
+3214|Insurance Maintenance Tax/Fee Collections – Comptroller|R
+3215|Insurance Department Fees – Miscellaneous|R
+3216|Insurance Department Examination and Audit Fees|R
+3217|Prepaid Funeral Contract Audit|R
+3218|Market Assistance Review Program Fees|R
+3219|Insurance Maintenance Tax – Workers’ Compensation Division and Office of Injured Employee Counsel|R
+3220|Workers’ Compensation Research and Oversight Division, Insurance Companies Maintenance Tax|R
+3221|Unauthorized Insurance Penalty|R
+3222|Insurance Money Penalty in Lieu of Suspension or Cancellation|R
+3223|Volunteer Fire Department Self-Insurance Fees|R
+3224|State Employees – Cafeteria Plan (Reimbursement Premiums and Administrative Fees)|R
+3225|Insurance Surcharge Fees for Bond Debt Service|R
+3230|Public Utility Gross Receipts Assessment|R
+3233|Gas, Electric and Water Utility Tax|R
+3234|Gas Utility Pipeline Tax|R
+3235|Education Tariff – Telecommunication Services|R
+3236|Automatic Dial Announcing Devices|R
+3237|Telephone Companies Tax|R
+3238|Telecommunications Utility/Commercial Mobile Service Provider Assessments|R
+3239|Telecommunications Utility Fees|R
+3241|Utility Cooperative Charter and License Fees|R
+3242|Water/Sewer Utility Service Regulatory Assessments/Penalties|R
+3244|Non-Bypassable Utility Fee|R
+3245|Compressed Natural Gas Training and Examinations|R
+3246|Compressed Natural Gas Licenses|R
+3248|Cogeneration Receipts|R
+3250|Mixed Beverage Tax|R
+3253|Liquor Tax|R
+3254|Airline/Passenger Train Beverage Tax|R
+3256|Liquor Permit Fees|R
+3257|License/Permit Surcharges – General|R
+3258|Beer Tax|R
+3259|Wine Tax|R
+3260|License/Permit Surcharges – Mixed Beverage|R
+3261|Wine and Beer Permit Fees|R
+3263|Brew Pub Licenses|R
+3264|Merger/Consolidation Fees – Alcoholic Beverage|R
+3265|Malt Liquor (Ale) Tax|R
+3266|Temporary Charitable Function Permit – Alcoholic Beverages|R
+3267|Alcoholic Beverage Collection Expense Surcharge|R
+3268|Alcoholic Beverage Code Money Penalty in Lieu of Cancellation or Suspension|R
+3269|Sale of Confiscated Alcoholic Beverages|R
+3271|Alcoholic Beverage Import Fee|R
+3272|Alcoholic Beverage Seller Training Programs|R
+3273|Alcoholic Beverage Samples and Labels Certificate of Approval|R
+3274|Alcoholic Beverage Commission Administrative Fees|R
+3275|Cigarette Tax|R
+3278|Cigar and Tobacco Products Tax|R
+3279|Tobacco Product Seller Training Fees|R
+3280|Tobacco Product Related Fines|R
+3281|Tobacco Product Advertising Fees|R
+3282|Cigarette, Cigar and Tobacco Combination Permits|R
+3283|Cigar/Tobacco Products Only Distributor Permit|R
+3290|Oil Production Tax|R
+3291|Natural Gas Production Tax|R
+3295|Oil Regulation Tax|R
+3296|Oil Well Service Tax|R
+3299|Sulphur Tax|R
+3301|Land Office Fees|R
+3302|Land Office Administrative Fees|R
+3305|Veterans' Land Board Service Fees|R
+3307|Repayment of Principal on Veterans Land/Housing Contracts|R
+3308|Interest on Veterans Land/Housing Contracts|R
+3311|Survey Permits|R
+3312|Saltwater Disposal Pit Violations|R
+3313|Oil and Gas Well Drilling Permit|R
+3314|Oil and Gas Violations|R
+3315|Oil and Gas Lease Bonus|R
+3316|Oil and Gas Lease Rental|R
+3317|Oil and Gas Well Applicant Bond/Financial Security|R
+3318|Sale of Natural Gas – State Energy Marketing Program|R
+3319|Oil Royalties from Parks and Wildlife Lands|R
+3320|Oil Royalties from Lands Owned by Educational Institutions|R
+3321|Oil Royalties from Other State Lands (State Departments, Boards, Agencies)|R
+3324|Gas Royalties from Parks and Wildlife Lands|R
+3325|Gas Royalties from Lands Owned by Educational Institutions|R
+3326|Gas Royalties from Other State Lands (State Departments, Boards, Agencies)|R
+3327|Outer Continental Shelf Settlement Monies|R
+3328|Surface Damages (Permanent School Fund Land)|R
+3329|Surface Mining Permits|R
+3330|Hard Mineral – Prospect and Lease|R
+3331|Wind/Other Lease Income From School Land|R
+3333|Royalties – Sulphur|R
+3334|Royalties – Coal and Lignite|R
+3335|Royalties – Other Hard Minerals|R
+3337|Brine and Water Receipts|R
+3338|Organization Report Fees|R
+3339|Railroad Commission Voluntary Cleanup Application Fees|R
+3340|Land Easements|R
+3341|Grazing Lease Rental|R
+3342|Land Lease|R
+3344|Sand, Shell, Gravel, Timber Sales|R
+3349|Land Sales|R
+3350|Interest on Land Sales (Public School)|R
+3353|Sale of Veteran’s Bonds|R
+3354|Water Development Bond Sales|R
+3357|Water Quality Grants Processing Fees|R
+3360|Water Quality Act Violations|R
+3362|Water Storage Contract Repayments|R
+3364|Water Use Permits|R
+3366|Business Fees – Natural Resources|R
+3367|Water Bank Transaction Fees|R
+3368|Department of Water Resources Filing/Copy Fees|R
+3369|Reimbursement for Well Plugging Costs|R
+3370|Boat Sewage Disposal Device Certificate|R
+3371|Waste Treatment Inspection Fee|R
+3372|Quarry Pit Safety Fees|R
+3373|Injection Well Regulation|R
+3374|Underground and Above Ground Storage Tank Fees|R
+3375|Air Pollution Control Fees|R
+3376|Water Pollution Control Abatement|R
+3377|Discharge Prevention and Response Certification Fee|R
+3378|Coastal Protection Fee|R
+3379|Oil Spill Prevention and Response Act Violations|R
+3380|Clean Air Fees, S.B. 19|R
+3381|Oil-Field Cleanup Regulatory Fee on Oil|R
+3382|Railroad Commission Rule Exceptions|R
+3383|Oil-Field Cleanup Regulatory Fee on Gas|R
+3384|Oil and Gas Compliance Certification Reissue Fee|R
+3385|Natural Gas Policy Act Fees|R
+3386|Engineer Registration Program Fees|R
+3387|Texas Experimental Research and Recovery Activity (TERRA) License Fees|R
+3388|Subsurface Excavation Fees|R
+3389|Clean Fuel Incentive Surcharge|R
+3390|Purchase of Dry Cleaning Solvent Fees|R
+3391|Curation Fees for Historical Artifacts|R
+3392|Oil Overcharge Settlement Receipts|R
+3393|Abandoned Well Site Equipment Disposal|R
+3394|Texas Experimental Research and Recovery Activity (TERRA) Wellbore Release Fees|R
+3395|Texas Experimental Research and Recovery Activity (TERRA) Wellbore Acceptance Payments from Mineral Interest Owners|R
+3400|Business Fees – Agriculture|R
+3401|Repayment of Financial Assistance Loans/Agricultural Products|R
+3402|Weighing and Measuring Device Inspector License|R
+3403|Agriculture Product Standards and Production Process Certification Programs|R
+3404|Citrus Budwood and Grove Certification Fees|R
+3405|Farm and Ranch Security Loan Bonds|R
+3406|Farm and Ranch Loan Repayments|R
+3407|Farm and Ranch Finance Program Bonds|R
+3408|Texas Department of Agriculture Program Fees|R
+3409|Farm and Ranch Finance Contract Repayments|R
+3410|Agriculture Registration Fees|R
+3411|Fuel Ethanol and Biodiesel Production Fee|R
+3414|Agriculture Inspection Fees|R
+3416|Sale of Agricultural Finance Authority Bonds/Notes|R
+3417|Travel Fees for Seed Records Audit and Egg Inspections|R
+3420|Livestock Export/Import Processing Fees|R
+3421|Citrus and Vegetable Commission Merchants Fines|R
+3422|Agricultural Administrative Penalties|R
+3423|Agriculture Association Fees|R
+3427|Agricultural Bond Approval Fee|R
+3428|Texas Certified Retirement Community Program Application Fees|R
+3430|Federal Receipts Matched – Parks and Wildlife|R
+3431|Federal Receipts Not Matched – Parks and Wildlife|R
+3433|Lake Texoma Fishing License Fees|R
+3434|Game, Fish and Equipment Fees – Non-Commercial|R
+3435|Game, Fish and Equipment Fees – Commercial|R
+3436|Oyster Fees|R
+3437|Public Hunting/Fishing/Other Participation Fees|R
+3442|Stocking Fish in Private Waters|R
+3445|Oyster Bed Location Rental|R
+3446|Wildlife Value Recovery|R
+3447|Sale of Confiscated Pelts, Marine Life, Vessels, Contraband|R
+3448|Parks and Wildlife, Sale of Forfeited Property|R
+3449|Game and Fish, Water Safety, and Parks Violations|R
+3450|Parks and Wildlife Money Penalty in Lieu of Suspension|R
+3451|Parks and Wildlife Land Use Penalties|R
+3452|Wildlife Management Permits|R
+3453|Regulation of Possession of Wild Animals Permit Fee|R
+3455|Vessel Registration Fees|R
+3456|Vessel/Outboard Motor Title Certificate|R
+3459|Sale of Park Development Bonds|R
+3461|State Parks Fees|R
+3462|Boater Education Exam Fees|R
+3463|Marine Safety Enforcement Officer Certification Fees|R
+3464|Floating Cabin Permit, Application, Renewal and Transfer|R
+3465|Mobile Beach Business Permit|R
+3468|Parks and Wildlife Publication Sales|R
+3469|Parks and Wildlife Publication Royalties and Commissions|R
+3471|Parks and Wildlife Fund Raising Program|R
+3475|Protected Plant Permits|R
+3476|Hi-Ed Mand Trnsf-Ret Debt,Unexp Plant Fds|R
+3477|Hi-Ed Mand Trnsf-Ret Debt,Auxil Enter Fds|R
+3478|Hi-Ed Mand Trnsf-Ret Debt,Designated Fds|R
+3479|Hi-Ed Mand Trnsf-Ret Debt,Skiles Act Fds|R
+3480|Hi-Ed Other Mandatory Transfers|R
+3481|Hi-Ed Mand Trnsf-Ret Debt,Bldg Use Fee Fd|R
+3482|Hi-Ed Mand Trnsf-Ret Debt, Tuition|R
+3483|Hi-Ed Net Decr In Lease Payable Rept Only|R
+3484|Hi-Ed Federal Approp-Non-Operating Rev|R
+3485|Hi-Ed State Grants,Ex.B/Restricted-Ex.C|R
+3486|Hi-Ed Fed Grants, Exh.B/Restricted Ex.C|R
+3487|Hi-Ed Private Grants,Ex.B/Restricted Ex.C|R
+3488|Hi-Ed Net Decr In Allowance-Ex.B Only|R
+3489|Hi-Ed Net Decr Accrued Comp Abs-Ex.B Only|R
+3490|Reclass. from Other Components-Ex.B Only|R
+3491|Hi-Ed Local Grants, Exh.B/Restricted Ex.C|R
+3492|Available Univ Fund-Reporting Ex.C Only|R
+3493|Hi-Ed Invest Income-Ex.B/Restricted Ex.C|R
+3494|Hi-Ed Endowment Contributions-Perm & Term|R
+3495|Hi-Ed Real Gains On Invest-Ex.B/Rest Ex.C|R
+3496|Interest On Loans Receivable|R
+3497|Hi-Ed Oth Intr Income-Ex.B/Restrict Ex.C|R
+3498|Hi-Ed Other Operating Revenues|R
+3499|Hi-Ed Net Incr In Inventory-Report Only|R
+3500|Federal Receipts Matched – Education Programs|R
+3501|Federal Receipts Not Matched – Education Programs|R
+3502|Hi-Ed Mand Transfers, Loan Fds/Grants Match|R
+3503|Higher Education, Other Fees|R
+3504|St Grants/Contracts|R
+3505|Higher Education, Tuition and Fees|R
+3506|Higher Education, Laboratory Fees|R
+3507|Higher Education, Student Fees|R
+3508|Higher Education, Indirect Cost Recoveries/Private|R
+3509|Private Educational Institution Fees|R
+3510|High School Equivalency Certificate|R
+3511|Teacher Certification Fees|R
+3512|Teacher Retirement Reimbursement from Funds Outside Treasury|R
+3513|Teacher Retirement Reimbursement from Funds in Treasury|R
+3514|Higher Education, Indirect Cost Recoveries/State|R
+3515|College Student Loan Bond Sales|R
+3516|Interest on College Student Loans|R
+3517|Repayment of College Student Loans|R
+3518|Student Loan Fees|R
+3519|Hi-Ed Us Govt Adv, Ex. B Reporting Only|R
+3520|Higher Education, Interest on Local Deposits|R
+3521|Hi-Ed Earnings On Endowment|R
+3522|Higher Education, Sales/Services of Educational and Research Activities|R
+3523|Sales & Service Of Hospitals-Pledged|R
+3524|Hi-Ed Sales & Services Aux Enter-Pledged|R
+3525|Other Non-Operating Revenue/Gen Rev|R
+3526|Higher Education Building Use Fees (Designated Tuition)|R
+3527|Administrative Fees – Higher Education|R
+3528|Hi-Ed Proceeds Sale Bonds|R
+3529|Hi-Ed Proceeds Sale Other Nt/Loan|R
+3530|School Bond Guarantee Fees|R
+3531|Other Sales Of Goods& Svc-Pledged-Op Rev|R
+3532|Sale of Textbooks|R
+3533|Hi-Ed Indirect Cost Recovery/Local|R
+3534|Hi-Ed Recpt Passthru Fds/St Agy to Loc Fd|R
+3535|School Bus Repayments|R
+3536|Hi-Ed - Tuition Remissions/Exemptions|R
+3537|Hi-Ed Fed Approp, Unrestricted Ex. C|R
+3538|Hi-Ed St Approp, Ex. C Reporting Only|R
+3539|Hi-Ed State Appropriations - HEAF|R
+3540|Tax Discount Donation – Student Financial Assistance Grants|R
+3541|Hi-Ed Net Decr Bonds Payable-Report Only|R
+3542|Hi-Ed Net Decr Other Note/Loan Rept Only|R
+3543|Hi-Ed Expend For Plant Fac Report Only|R
+3544|Hi-Ed St Approp, Ex. B/Restricted-Ex.C|R
+3545|Higher Ed Savings Plan Contirbution|R
+3546|Prepaid Tuition Contracts|R
+3547|Prepaid Tuition Application Fees|R
+3548|Hi-Ed Mand Trans-Retiremnt Of Indebtness|R
+3549|Hi-Ed Mand Trans-Renewals & Replacements|R
+3550|Federal Receipts Matched – Health Programs|R
+3551|Federal Receipts Not Matched – Health Programs|R
+3552|HIV Medication Program|R
+3553|Pipeline Safety Inspection Fees|R
+3554|Food and Drug Fees|R
+3555|Hazardous Substance Manufacture|R
+3556|Manual Reimbursement Claims – Nursing Homes|R
+3557|Health Care Facilities Fees|R
+3558|Rural Physician Participation Fees|R
+3559|Delivery of Protective/Regulatory Service Fees|R
+3560|Medical Examination and Registration|R
+3561|Health Department Lab Financing Fees|R
+3562|Health Related Professional Fees|R
+3563|Equalization Surcharges, 9-1-1 Emergencies|R
+3564|Disproportionate Share Revenues/State Hospitals|R
+3565|Vendor Drug Rebate – Medicaid Program – Supplemental|R
+3568|Disproportionate Share Revenues/Non-State Hospitals|R
+3569|Receipt of Federal/State Disproportionate Share and Upper Payment Limit Program Payments by State Hospitals|R
+3570|Peer Assistance Program Fees|R
+3571|Hazardous Waste Clean Up Application Fees|R
+3572|Health Related Professional Fees, H.B. 11, General Revenue Increase|R
+3573|Health Licenses for Camps|R
+3574|Disproportionate Share Revenues/State Hospitals/Federal Match|R
+3575|Repayment of Loans to Medical Students – Rural Medicine|R
+3576|Disproportionate Share Revenues/Non-State Hospitals/Federal Match|R
+3577|Tier Two Forms Filing Fees|R
+3578|Party State Contributions|R
+3579|Vital Statistics Certification and Service Fees|R
+3580|Controlled Substance Tax Certificates|R
+3581|Controlled Substance Tax Fine|R
+3582|Controlled Substances Act Forfeited Property Sales|R
+3583|Controlled Substances Act Forfeited Money|R
+3584|Controlled Substance Tax Certificates Billing|R
+3585|Toxic Chemical Release Form Reporting Fees|R
+3586|Toxic Chemical Release Penalties|R
+3587|Non-Attainment Area Emission Reduction Use Contribution|R
+3588|Transfers From Urban/Rural Hospitals for Medicaid Match (UPL)|R
+3589|Radioactive Materials and Devices or Equipment Regulation|R
+3590|Low-Level Radioactive Waste Disposal Fees|R
+3591|Transfers from State Hospitals for Medicaid Match (UPL)|R
+3592|Waste Disposal Facilities, Generators, Transporters|R
+3593|Waste Tire Recycling Fees|R
+3594|Waste Disposal Violations|R
+3595|Medical Assistance Cost Recovery|R
+3596|Automotive Oil Sales Fee|R
+3597|WIC (Women, Infants, and Children Program) Rebates|R
+3598|Battery Sales Fee|R
+3599|Planning and Implementation Fees Radioactive/Nuclear Facilities|R
+3600|Federal Receipts Matched – Welfare/MHMR Programs|R
+3601|Federal Receipts Not Matched – Welfare/MHMR Programs|R
+3602|Earned Federal Funds, Food Stamp Recoupment|R
+3603|Reimbursement for Telecommunications Assistance, Distance Learning and Other Advanced Services|R
+3606|Support and Maintenance of Patients|R
+3611|Private Institutions License Fees|R
+3614|Counseling, Care and Treatment of Out-Patients|R
+3616|Social Worker Regulation|R
+3618|Welfare/MHMR Service Fees|R
+3620|Child Support Collections – State, Non-Title IV-D|R
+3621|Child Support Collections – Federal|R
+3622|Child Support Collections – State, Title IV-D|R
+3624|Adoption Registry Fees|R
+3625|Court Costs Awarded Parent/Child Cases|R
+3628|Dormitory, Cafeteria and Merchandise Sales|R
+3632|Elderly Housing Set-Aside|R
+3633|Housing Bonds – Reservation Certificate|R
+3634|Medicare Reimbursements|R
+3635|Sale of Health Laboratory Services|R
+3636|Inmate Health Care Co-payments|R
+3637|Federal Pass-Through Revenue from Medicaid Insurance Provider to DSHS|R
+3638|Vendor Drug Rebates, Medicaid Program – Mandated|R
+3639|Premium Credits, Medicaid Program|R
+3640|Vendor Drug Rebates – Non-Medicaid Programs|R
+3641|Needleless Systems and Sharps Registration Fees|R
+3642|Residential Aftercare Participant Fees|R
+3643|Premium Co-Payments|R
+3644|Medical Advance Directive Penalties|R
+3645|Standardized Credentials Verification|R
+3646|Physician Joint Negotiation Regulation|R
+3647|9-1-1 Emergency Service Fees|R
+3648|Interagency Contract for Medicaid Services|R
+3649|Vendor Drug and HMO Experience Rebates, CHIP Program|R
+3650|Protest Funds – Cigarette Taxes|R
+3651|Protest Funds – Diesel Fuel Taxes|R
+3652|Protest Funds – Controlled Substance Taxes|R
+3653|Protest Funds – Franchise Taxes|R
+3654|Protest Funds – Insurance Companies Premium Taxes|R
+3655|Protest Funds – Motor Fuel Taxes|R
+3656|Protest Funds – Natural and Casinghead Gas Taxes|R
+3657|Protest Funds – Professional Fee Taxes|R
+3658|Protest Funds – State Sales and Use Taxes|R
+3659|Protest Funds – Occupation Taxes|R
+3660|Protest Funds – Alcoholic Beverage Taxes|R
+3661|Protest Funds – City Sales Taxes|R
+3662|Protest Funds – Oil Production Taxes|R
+3663|Protest Funds – MTA Taxes|R
+3664|Protest Funds – Gross Receipt Taxes, Mixed Drink|R
+3665|Protest Funds – Inheritance Taxes|R
+3666|Protest Funds – Cement Taxes|R
+3667|Protest Funds – Motor Vehicle Sales Taxes|R
+3668|Protest Funds – Sulphur Taxes|R
+3669|Protest Funds – Public Utility Gross Receipts Assessment|R
+3670|Protest Funds – County/SPD/All Other Sales Taxes|R
+3671|Protest Funds – Insurance Maintenance Tax/Fees and Workers’ Compensation Surcharge|R
+3672|Protest Funds – City, County, MTA and SPD Taxes|R
+3673|Protest- W/C Comm Ins Maint Tax|R
+3674|Protest-Wc Res & Ovrst Cncl Ins Maint Tax|R
+3675|Protest Funds – Motor Fuel Mixture Testing Fees|R
+3676|Protest Funds – Oyster Sales Fees|R
+3677|Protest Funds – School Fund Benefit Fees on Diesel Fuel|R
+3678|Protest Funds – Cigar and Tobacco Producers Tax|R
+3679|Protest Funds – Unidentified|R
+3680|Hi-Ed Non-Mandatory Transfers In|R
+3681|H.E.Fed Pasthru Grants,Frm Othr St Agys|R
+3682|Hi-Ed-St Passthru Grants Frm Other St Agy|R
+3683|Hi-Ed Net Inc(Dec)Fair Val,Ex B,Rest Ex C|R
+3684|Dental School Set-Aside, Loan Repayments|R
+3685|School Textbook Publisher or Manufacturer Penalty|R
+3686|Tuition Set-Aside for Attorney Education Loan Repayments|R
+3687|Tuition Set-Aside for Dental Hygiene Education Loan Repayments|R
+3688|Higher Education, Tuition and Fees – Pledged|R
+3689|Higher Education, Hospital Sales and Services – Non-Pledged|R
+3690|Higher Education, Auxiliary Sales and Services – Non-Pledged|R
+3691|Texas B-On-Time Student Loan Tuition Set-Asides|R
+3692|Medical School Tuition Set-Asides|R
+3693|Doctoral Incentive Loan Repayment Set-Asides for Faculty and Administration|R
+3695|Hi-Ed - Tuition Discounts and Allowances|R
+3696|Hi-Ed - Hospital Discounts and Allowances|R
+3698|Hi-Ed-Auxiliary Discounts and Allowances|R
+3699|Hi-Ed-Other Sales & Svcs-Discounts&Allow|R
+3700|Federal Receipts Matched – Other Programs|R
+3701|Federal Receipts Not Matched – Other Programs|R
+3702|Federal Receipts – Earned Credits|R
+3703|Recovery Audit Reimbursements – State|R
+3704|Court Costs|R
+3705|State Parking Violations|R
+3706|Arrest Fees|R
+3707|Marriage License Fees|R
+3708|Judge’s Retirement Contributions|R
+3709|District Court Suit Filing Fee|R
+3710|Court Fines|R
+3711|Judicial Fees|R
+3712|Fees from Criminal Offenses|R
+3713|Fees from Misdemeanor or Felony Cases|R
+3714|Judgments and Settlements|R
+3715|Excess from Delinquent Tax Sales|R
+3716|Lien Fees|R
+3717|Civil Penalties|R
+3718|Court Costs/Attorney/OAG Authorized Collection Fees|R
+3719|Fees for Copies or Filing of Records|R
+3720|Expedited Handling Charges (Secretary of State)|R
+3721|Court Cost/Crime Stoppers Assistance|R
+3722|Conference, Seminars, and Training Registration Fees|R
+3723|Fees for Examinations and Audits|R
+3724|Insurance Notification of HIV Related Test Fees|R
+3725|State Grants, Pass-Through Revenue, Non-Operating|R
+3726|Federal Receipts – Indirect Cost Recoveries|R
+3727|Fees for Administrative Services|R
+3728|Unemployment Assessments|R
+3729|State Contributions – Retirement Systems|R
+3730|Unexpended Contributions|R
+3731|Controlled Substance Reimbursement of Related Costs|R
+3732|Unemployment Compensation Penalties|R
+3733|Workers’ Compensation Penalties|R
+3734|Recoveries from Crime Victim Restitution|R
+3735|Recovery of Parole Costs|R
+3736|Unclaimed Compensation to Crime Victims|R
+3737|Probation Supervision Recovery|R
+3738|Grants – Cities/Counties|R
+3739|Grants – Other Political Subdivisions|R
+3740|Gifts/Grants/Donations – Non-Operating Revenue/Program Revenue|R
+3741|Contributions from Public Retirement Systems|R
+3742|Tax and Revenue Anticipation Notes|R
+3743|Texas Water Development Board – State Revolving Fund Pass-Through|R
+3744|Sale of Public Building Bonds|R
+3745|Recovery Audit Reimbursements – Federal|R
+3746|Rental of Lands/Miscellaneous Land Income|R
+3747|Rental – Other|R
+3748|Royalties|R
+3749|Use of Great Seal of Texas – Licenses|R
+3750|Sale of Furniture and Equipment|R
+3751|Sale of Buildings|R
+3752|Sale of Publications/Advertising|R
+3753|Sale of Surplus Property Fee|R
+3754|Other Surplus or Salvage Property/Materials Sales|R
+3755|Commemorative Sales/Gift Shop and Museum Revenues|R
+3756|Prison Industries Sales|R
+3757|Official State Coin Royalties|R
+3758|Employee/Other Contributions – Retirement Systems|R
+3759|Telecommunications Service from Local Funds|R
+3760|Insurance Premium Contributions – State|R
+3761|Insurance Premium Contributions – Other|R
+3762|Central Supply Store Receipts|R
+3763|Sale of Operating Supplies|R
+3764|Natural Research Laboratory Commission – Sale of Super Collider Services|R
+3765|Interagency Sale of Supplies/Equipment/Services|R
+3766|Supplies/Equipment/Services – Local Funds|R
+3767|Supplies/Equipment/Services – Federal/Other|R
+3768|Flights for Official State Business – Taxable|R
+3769|Forfeitures|R
+3770|Administrative Penalties|R
+3771|Tax Refunds to Employers of TANF Recipients|R
+3772|License Suspension Fee, Child Support Obligor|R
+3773|Insurance Recovery After Loss – Other Financing Sources/Revenue|R
+3774|Penalty for Failure to Use Electronic Funds Transfer (EFT)|R
+3775|Returned Check Fees|R
+3776|Fingerprint Record Fees|R
+3777|Warrants Voided by Statute of Limitation – Default Fund|R
+3778|Credit Card Issuer Receipts|R
+3779|Repayment of Imprest Advances|R
+3780|Repayment of Travel Advances|R
+3781|Repayment of Petty Cash Advances|R
+3782|Repayment of Loans, Political Subdivision|R
+3783|Insurance Recovery With Loss – Other Financing Sources/Expense|R
+3784|Insurance Recovery – Extraordinary|R
+3785|Interest on Oil Overcharge Loans|R
+3786|Repayment of Loans to Other State Agencies|R
+3787|Receipt of Loan from Other State Agency|R
+3788|Default Deposit Adjustments – Suspense|R
+3789|Returned Checks – Default Fund|R
+3790|Deposit to Trust or Suspense|R
+3791|Deposit of Cash Bonds to Secure Liability|R
+3792|Deposit to U.S. Savings Bond Account|R
+3793|Political Subdivision Administrative Fees, Failure to Appear|R
+3794|Deposit to Trust From Fuels Tax Collections – IFTA|R
+3795|Other Miscellaneous Governmental Revenue|R
+3796|Interest Received/Paid to Federal Government|R
+3797|Federal Unemployment Fund Advance|R
+3798|Tax Refund for Economic Development, Reinvestment Zone/Abatement Agreement – Sales Tax|R
+3799|Local Account Balances Brought into Treasury|R
+3800|Employer Contributions|R
+3801|Time Payment Plan for Court Costs/Fees|R
+3802|Reimbursements – Third Party|R
+3803|Reimbursements – Intra-Agency|R
+3804|Tax Refund for Economic Development, Reinvestment Zone/Abatement Agreement – Franchise Tax|R
+3805|Subrogation Recoveries|R
+3806|Rental of Housing to State Employees|R
+3807|Issuance of Commercial Paper|R
+3808|Sale/Redemption of Commercial Paper|R
+3809|Sale of Mortgage Investments – Long-Term|R
+3810|Sale of Real Estate Investments|R
+3811|Sale of Miscellaneous Short-Term Investments and Short-Term Investment Funds|R
+3812|Sale of Miscellaneous Investments – Long-Term|R
+3813|Sale of Corporate Securities – Long-Term|R
+3814|Sale of Certificates of Deposit – Short-Term|R
+3815|Sale of Certificates of Deposit – Long-Term|R
+3816|Sale of Repurchase Agreements|R
+3817|Sale of Other Public Obligations – Short-Term|R
+3818|Sale of Other Public Obligations – Long-Term|R
+3819|Sale of Corporate Obligations – Short-Term|R
+3820|Sale of Corporate Obligations – Long-Term|R
+3821|Sale of United States Government Obligations – Short-Term|R
+3822|Sale of United States Government Obligations – Long-Term|R
+3823|Amortization of Premium/Discount – Mortgage Investments|R
+3824|Amortization of Premium/Discount – Miscellaneous Investments|R
+3825|Amortization of Premium/Discount – Other Public Obligations|R
+3826|Amortization of Premium/Discount – Corporate Obligations|R
+3827|Amortization of Premium/Discount – United States Government Obligations|R
+3828|Dividend Income|R
+3829|Sale of Corporate Securities – Short-Term|R
+3830|Sale of Mortgage Investments – Short-Term|R
+3831|Federal Receipts – Proprietary Funds – Operating|R
+3832|Professional Fees-Discounts & Allowances|R
+3833|Cash Receipts – Capital Grant and Contributions – Other Grant Revenue|R
+3834|Gain/Loss on Sales of Capital Assets – General (Non-Program)|R
+3835|Professional Fees - Pledged|R
+3836|Special Items|R
+3837|Fed Grnt-Rept Only-Capital Grnt/Contrib|R
+3838|Net Inc/Dec Fair Val-Non-Oper Rev-Op G&C|R
+3839|Sale of Vehicles, Boats, and Aircraft|R
+3840|Veteran Home/Cemetery Payments from Residents, VA Reimbursements and Non-Veterans|R
+3841|Sale of Other Capital Assets|R
+3842|State Grants, Pass-Through Revenue, Operating|R
+3843|Incr Net Asset D/T Intagy Trns Cap Asset|R
+3844|Net Inc/Dec Fair Valu Inv Non-Op Pledged|R
+3845|Net Inc/Dec Fair Value Inv Oper Pledged|R
+3846|New Home Registration Fees|R
+3848|Public/Private Revenue Sharing – State Receipts|R
+3849|Tobacco Suit Settlement Receipts|R
+3850|Interest on Lottery Prize Investments|R
+3851|Interest on State Deposits and Treasury Investments, General (Non-Program)|R
+3852|Interest on Local Deposits – State Agencies|R
+3853|Interest on Judgments|R
+3854|Interest – Other, General (Non-Program)|R
+3855|Interest on Investments, Obligations and Securities – General (Non-Program)|R
+3856|Loan Premiums or Fees or Securities Lending|R
+3857|Interest on State Deposits and Treasury Investment – Operating Revenue|R
+3858|Bail Bond Surety Fees|R
+3859|Hearing Fee to Party Not Prevailing|R
+3860|Texas Film Industry Loan Application Fees / Loan Guaranty Fees|R
+3861|Gain on Sale of Investments, Obligations, Securities|R
+3862|Gain On Sale Of Invest,Non-Cash/Non-Oper|R
+3863|Interest on Investments, Obligations and Securities, Non-Operating Revenue|R
+3864|Interest on State Deposits and Treasury Investments, Non-Operating Revenue|R
+3865|Interest Income – Other Non-Operating Revenue|R
+3866|Gifts/Grants/Donations – Pledged|R
+3867|Interest Income Other – Pledged|R
+3868|Other Operating Revenue-Pledged|R
+3869|Workers Comp Insurance – Death Benefit to State|R
+3870|Bond Proceeds for Advanced Refunding|R
+3871|Accrued Interest/Premium on Issuance of Bonds|R
+3872|Net Inc/Dec Fair Valu-Oper Rev-Noncash|R
+3873|Interest on Investments, Obligations and Securities – Operating Revenue|R
+3874|Interest Income – Payment In-Kind Bond|R
+3875|Interest Income – Other Operating Revenue|R
+3876|Unemployment Obligation Assessment|R
+3877|Sale of Crime Memorabilia|R
+3878|Interstate Commission for Adult Offender Supervision Assessment|R
+3879|Credit Card and Electronic Services Related Fees|R
+3880|Sale of General Obligation/Revenue Bonds|R
+3881|Cash Receipt – Capital Contributions/General Revenue|R
+3884|Resales to Promote Public Libraries|R
+3885|Lotto Retailer On-line Charge|R
+3886|Lottery Broadcast Rights|R
+3887|Other Nonop Rev-Nonpledged/Op G&C-Other|R
+3888|Capital Access Program Interest|R
+3889|Capital Access Program Fees|R
+3890|Record Gl Acct Only:Sec/Warr issue/Warr Pd|R
+3891|Restatements-Other Than Gr Appn.Activity|R
+3892|Cap Asset-Cap Cont/Cap G&C-Gft& Donation|R
+3893|Increase In Obligation-Capital Leases|R
+3894|Cap Asset-Cont/Gr Cap Contribution|R
+3895|Legislative Appropriations Revenue|R
+3896|Extraordinary Items|R
+3897|Restatements-Gr Appn. Activity Only|R
+3898|Other Nonop Rev-Pledged/Op G&C-Other|R
+3899|Net Inc(Dec)-Fair Value-Gen(Non-Prgm)|R
+3901|Allocations to GR 0001 (Unapp Undyed Diesel), Fund 0002, Fund 0006 and Fund 0057 from Fund 0001 (Motor Fuels Tax)|R
+3902|Allocations to Unappropriated GR 0001 from Fund 0001 (Motor Fuel Tax Enforcement)|R
+3903|Allocation to Unappropriated GR 0001 from Fund 0001 (Refund Filing Fees)|R
+3905|Allocation to Unappropriated GR 0001 from Fund 0001 (Mixed Beverage Tax)|R
+3910|Transfers to Available Education Funds from Permanent Education Funds|R
+3911|Allocation to GR Account – Foundation School 0193 from Fund 0001 (Dedicated Receipts)|R
+3913|Transfer to Children Assistance Programs from Fund 0001|R
+3914|Transfers to Medical Assistance Programs from Fund 0001|R
+3915|Allocation from Fund 0001 to Unappropriated GR 0001 (Mixed Beverage Tax)|R
+3916|Allocations from Fund 0001 to Farm to Market Road Fund 0189|R
+3917|Allocations to TRS Trust Acct 0960, Retired School Employee GIP Trust 0989, and GR Acct – Excess Benefit Arrangement, TRS 5031 from Fund 0001 (Dedicated Receipts)|R
+3918|Allocation from Fund 0001 to Fund 0001 – Optional Retirement Program|R
+3920|Allocation from Fund 0001 to Fund 0001 – Cigarette Tax|R
+3921|Allocation from Fund 0001 to State Parks Account 0064 – Cigarette Tax|R
+3922|Transfers to GR Account – Foundation School 0193 from GR Account – Lottery 5025 (Education)|R
+3924|Allocations to GR Account – State Parks 0064, GR Account – Texas Recreation and Parks 0467, and GR Account – Historic Site 5139 from Fund 0001 (Sporting Goods Tax)|R
+3925|Alloc 0001 to 0062-Cig Tax Enf|R
+3926|Alloc 0001 to 0062-Cig Stamp Purch|R
+3927|Alloc 0001 to 0062-Oil Enforce|R
+3928|Alloc 0001 to 0062-Gas Enforce|R
+3930|Clearance from City, County, MTA and SPD Sales Tax Trust Account 0882 to Unappropriated GR 0001 (City Sales Tax Service Fees)|R
+3931|Clearance from City, County, MTA and SPD Sales Tax Trust Account 0882 to Unappropriated GR 0001 (County Sales Tax Service Fees)|R
+3932|Clearance from City, County, MTA and SPD Sales Tax Trust Account 0882 to Unappropriated GR 0001 (MTA Sales Tax Service Fees)|R
+3933|Clearance from City, County, MTA and SPD Sales Tax Trust Account 0882 to Unappropriated GR 0001 (SPD Sales Tax Service Fees)|R
+3934|Rct Ft to Fund 0006 from 0001|R
+3935|Alloc 0001 to 0001-Liquor Enfc|R
+3936|Allocation from Fund 0001 to Fund 0001 – Liquor Enforcement|R
+3939|Alloc from Fd1 to Gr-Hotel Tax|R
+3940|Other Transfers to GR Account – Hotel Occupancy Tax for Economic Development 5003 from Fund 0001|R
+3941|Transfers to GR Account – Foundation School 0193 from Fund 0001 and Property Tax Relief Fund 0304|R
+3942|Other Transfers to Water Development Bond Interest and Sinking Fund 0352 from Fund 0001|R
+3943|Allocation from Fund 0001 for O.A.S.I./Retirement|R
+3944|Alloc 0001 to 0062-City Tax Fee|R
+3945|Alloc 0001 to 0062-MTA Tax Fee|R
+3946|Alloc 0001 to 0062 Cnty Tx Fee|R
+3947|State Office of Risk Management Assessments|R
+3948|Allocation to GR 0001 from Fund 0001 (Simulcast Pari-Mutuel)|R
+3949|Allocations from Fund 0001 to School Child Care Services Account|R
+3950|Allocations to Fund 0001 or Other Funds from Special Funds – UB|R
+3952|Transfer to Unappropriated GR 0001 from Disproportionate Share Funds|R
+3953|Unappropriated GR 0001 Reimbursement for Statewide Cost Allocation Plan (SWCAP)|R
+3954|Allocations from Fund 0001 to Fund 0001 (Unclaimed Motor Boat and Other Refunds)|R
+3955|Allocations to State Textbook Fund 0003 from Available School Fund 0002|R
+3956|Excess Priority Alloc 001 to 001|R
+3957|Excess Priority Allocations from Fund 0001 to GR Account – Foundation School 0193|R
+3958|Excess Priority Allocations from Fund 0001 to GR 0001|R
+3959|Allocations to GR 0001 from Fund 0001(Motorboat Tax Refunds)|R
+3960|Allocations to GR 0001 from Fund 0001 (Other Fuels Tax Refunds)|R
+3961|STS (TEX-AN) Transfers to General Revenue 0001|R
+3962|Capital Complex Transfers to General Revenue 0001|R
+3963|Transfer to GR Account – State Owned Multicategorical Teaching Hospital 5049 and Unappropriated GR 0001 from GR Account – Lottery 5025 (Other)|R
+3964|Master Lease Transfer Receipts|R
+3965|Cash Transfers In Between Funds and Accounts – Medicaid Only|R
+3966|Allocations for Coin Machine Enforcement|R
+3967|Earned Federal Fund Revenue Transfers from Unappropriated to Appropriated|R
+3968|Operating Transfers Within Agency, Fund or Account and Fiscal Year|R
+3969|Operating Transfers In from Fund 0001 – Agency 902 Transactions|R
+3970|Revenue and Expenditure Adjustments Within an Agency, Fund or Account and Fiscal Year|R
+3971|Federal Pass-Through Revenue Interagency, Non-Operating for General Budgeted|R
+3972|Other Cash Transfers Between Funds or Accounts|R
+3973|Other Cash Transfers Within Fund or Account, Between Agencies|R
+3974|Unexpended Cash Balance Forward – Federal Funds|R
+3975|Unexpended Cash Balance Forward – Other Funds|R
+3976|Unexpended Cash Balance Forward – Earned Federal Funds|R
+3977|Medicaid ICF/MR – Federal Portion|R
+3978|Federal Pass-Through Revenue Interagency, Operating for General Budgeted|R
+3979|Other Transfers from GR 0001 (Service/Operating)|R
+3980|Operating Account Transfers In|R
+3981|Central Services Account Transfers In|R
+3982|Allocations from Federal Grants for O.A.S.I./Retirement/Benefits|R
+3983|Agency Unappropriated Receipts Swept by Comptroller|R
+3984|Unemployment Compensation Benefit Transfers – Special Funds to Fund 0001|R
+3985|Workers Compensation Payments Transfers – Special Funds to Fund 0001|R
+3986|Unexpended Cash Balance Forward – Operating Transfers In|R
+3987|Workers Compensation Revolving Account Transfers In|R
+3988|Unemployment Compensation Revolving Account Transfers In|R
+3989|Transfers from GR 0001 to S.E.R.S. State Trust Account 0955 (Death Benefits)|R
+3990|Trans into GR 0001/AG Oper|R
+3991|Residual Equity Transfers In|R
+3992|Clearance from Trust or Suspense|R
+3993|USAS Initial Load (Rev Conv from FACTS)|R
+3994|Funds Consolidation Rpt Transfer-Revenue|R
+3995|Shared Fund Transfers|R
+3996|Direct Deposit Transfers|R
+3997|Residual Equity Non-Cash Transfers In|R
+3998|Bal Sheet Offset-Gr App - Non-Contrl Agy|R
+3999|General Revenue Cash Flow Transfers|R
+7000|Expenditure Budget|E
+7001|Salaries and Wages – Line Item Exempt Positions|E
+7002|Salaries and Wages – Classified and Non-Classified Permanent Full-Time Employees|E
+7003|Salaries and Wages – Classified and Non-Classified Permanent Part-Time Employees|E
+7004|Salaries and Wages – Classified and Non-Classified Non-Permanent Full-Time Employees|E
+7005|Salaries and Wages – Classified and Non-Classified Non-Permanent Part-Time Employees|E
+7006|Salaries and Wages – Hourly Full-Time Employees|E
+7007|Salaries and Wages – Hourly Part-Time Employees|E
+7008|Higher Education Salaries – Faculty/Academic Employees|E
+7009|Higher Education Salaries – Faculty/Academic Equivalent Employees|E
+7010|Higher Education Salaries – Professional/Administrative Employees|E
+7011|Higher Education Salaries – Extension–Professional/ Administrative Employees|E
+7012|Higher Ed Sal/Class Fulltime|E
+7013|Higher Ed Sal/Class Partime|E
+7014|Higher Education Salaries – Student Employees|E
+7015|Higher Education Salaries – Classified Employees|E
+7016|Salaries and Wages – Employees Receiving Twice-A-Month Salary Payment|E
+7017|One-Time Merit Increase|E
+7018|Hardship Stations Pay|E
+7019|Compensatory Time Pay|E
+7020|Hazardous Duty Pay|E
+7021|Overtime Pay|E
+7022|Longevity Pay|E
+7023|Lump Sum Termination Payment|E
+7024|Termination Pay – Death Benefits|E
+7025|Compensatory or Salary Per Diem|E
+7027|Lump Sum Incentive Payment|E
+7028|Productivity Bonus Awards|E
+7029|Achievement Bonus Program|E
+7030|Employee Incentive Bonus|E
+7031|Emoluments and Allowances|E
+7032|Employees Retirement – State Contribution|E
+7033|Employee Retirement – Fees/Surcharges|E
+7035|Commissioned Peace Officer Stipend Pay|E
+7037|Incentive Award for Authorized Service to Veterans|E
+7041|Employee Insurance Payments – (Employer Contribution)|E
+7043|F.I.C.A. Employer Matching Contribution|E
+7044|F.I.C.A. Employee Share Paid by the State|E
+7045|State Share Emp. F.I.C.A. – Con Pd Term Emp Level|E
+7046|Food Stamp Bonus Pay|E
+7047|Recruitment and Retention Bonuses|E
+7048|Performance Rewards|E
+7049|Year 2000 Critical Staff Award|E
+7050|Benefit Replacement Pay|E
+7051|Severance Pay|E
+7052|Unemployment Compensation Benefits – Special Fund Reimbursement|E
+7061|Workers’ Compensation Claims – Self Insurance Programs|E
+7062|Workers’ Compensation – Indemnity Payments|E
+7071|State Employee Relocation|E
+7075|Retirement Incentive Payment|E
+7080|Retirement – Service Credit for Accumulated Sick Leave|E
+7081|Retirement/Benefits Payments – Employee Retirement System|E
+7082|Retirement/Benefits Payments – Judicial Retirement System|E
+7083|Retirement/Benefits Payments – Teacher Retirement System|E
+7084|Retirement Payments – Volunteer Fire Fighters’ Pension System|E
+7085|Retirement Payments – Law Enforcement and Custodial Officer Supplement|E
+7086|Optional Retirement – State Match|E
+7092|Ranger Pensions|E
+7101|Travel In-State – Public Transportation Fares|E
+7102|Travel In-State – Mileage|E
+7103|Travel – Per Diem, Non-Overnight Travel – Legislature|E
+7104|Travel In-State – Actual Meal and Lodging Expenses – Overnight Travel|E
+7105|Travel In-State – Incidental Expenses|E
+7106|Travel In-State – Meals and Lodging|E
+7107|Travel In-State – Non-Overnight Travel (Meals)|E
+7108|Travel In-State – Actual Expense Meals – No Overnight Travel|E
+7109|Travel In-State Parking Fees|E
+7110|Travel In-State – Board or Commission Member Meal and Lodging Expenses|E
+7111|Travel Out-of-State – Public Transportation Fares|E
+7112|Travel Out-of-State – Mileage|E
+7113|Travel – Per Diem, Overnight Travel – Legislature|E
+7114|Travel Out-of-State – Actual Meal and Lodging Expenses, Overnight Travel|E
+7115|Travel Out-of-State – Incidental Expenses|E
+7116|Travel Out-of-State – Meals and Lodging Not to Exceed the Locality-Based Allowance|E
+7117|Travel Out-of-State – Non-Overnight Travel (Meals)|E
+7118|Travel Out-of-State – Actual Expense Meals – No Overnight Travel|E
+7119|Travel Out-Of-State Parking|E
+7121|Travel – Foreign|E
+7122|Travel In-State – Single Engine Aircraft Mileage|E
+7123|Travel Out-of-State – Single Engine Aircraft Mileage|E
+7124|Travel In-State – Twin Engine Aircraft Mileage|E
+7125|Travel Out-of-State – Twin Engine Aircraft Mileage|E
+7126|Travel In-State – Turbine Powered or Other Aircraft Mileage|E
+7127|Travel Out-of-State – Turbine Powered or Other Aircraft Mileage|E
+7128|Travel – Apartment/House Rental Expense|E
+7130|Travel Out-of-State – Board or Commission Member Meal and Lodging Expenses|E
+7131|Travel – Prospective State Employees|E
+7132|Travel – Legislative Expenses – House of Representatives|E
+7133|Travel – Legislative Expenses – Senate|E
+7134|Legislative Per Diem|E
+7135|Travel In-State – State Hotel Occupancy Tax Expense Outside Galveston and South Padre Island City Limits|E
+7136|Travel In-State – State Hotel Occupancy Tax Expense Inside Galveston City Limits|E
+7137|Travel In-State – State Hotel Occupancy Tax Expense Inside South Padre Island City Limits|E
+7201|Membership Dues|E
+7202|Tuition – Employee Training|E
+7203|Registration Fees – Employee Training|E
+7204|Insurance Premiums and Deductibles|E
+7205|Employee Bonds|E
+7206|Service Fee Paid to the Lottery Operator|E
+7207|Lottery Incentive Bonus|E
+7208|Lottery Winnings|E
+7209|Lottery Winnings – Installment|E
+7210|Fees and Other Charges|E
+7211|Awards|E
+7212|State Employee – Cafeteria Plan Reimbursement Premiums|E
+7213|Training Expenses – Other|E
+7214|Public Assistance Payments – Unemployment|E
+7215|Return of Retirement Contributions|E
+7216|Insurance Premiums – Approved by Board of Insurance and Attorney General|E
+7217|Employee Bonds – Approval by the State Auditor|E
+7218|Publications|E
+7219|Fees for Receiving Electronic Payments|E
+7220|Court Expenses – Parental Notification|E
+7222|Filing Fees – Documents|E
+7223|Court Costs|E
+7224|Witness Fees and Allowances|E
+7225|Settlements and Judgments for Attorney’s Fees|E
+7226|Settlements and Judgments for Claimant/Plaintiff or Other Legal Expenses|E
+7227|Miscellaneous Claims Act Payments|E
+7228|Legislative Claims|E
+7229|Settlements and Judgments for Claimant/Plaintiff and Attorney|E
+7230|Miscellaneous Claims – Lost/Voided Warrants|E
+7231|Workers’ Compensation – Medical Services and Attorney Payments|E
+7232|Workers’ Compensation Self Insurance Programs – Medical Services and Attorney Payments|E
+7233|Employee Benefit Payments|E
+7234|Compensation for Crime Victims|E
+7236|Crime Victim Expenses|E
+7237|Payment of Claims from Trust or Other Funds|E
+7238|Foreign Office Activities|E
+7239|Consultant Services – Approval by Office of the Governor|E
+7240|Consultant Services – Other|E
+7242|Consultant Services – Computer|E
+7243|Educational/Training Services|E
+7244|Insurance Premiums and Deductibles – No Approval Required|E
+7245|Financial and Accounting Services|E
+7246|Legal Services|E
+7247|Hearings Officers – Pre-approved by the State Office of Administrative Hearings|E
+7248|Medical Services|E
+7249|Veterinary Services|E
+7252|Lecturers – Higher Education|E
+7253|Other Professional Services|E
+7254|Other Witness Fees|E
+7255|Investment Counseling Services|E
+7256|Architectural/Engineering Services|E
+7257|Legal Services – Approval by the State Office of Administrative Hearings|E
+7258|Legal Services – Other|E
+7259|Race Track Officials|E
+7260|Lottery Retailer Commissions|E
+7262|Personal Property – Maintenance and Repair – Computer Software – Expensed|E
+7263|Personal Property – Maintenance and Repair – Aircraft – Expensed|E
+7266|Real Property – Buildings-Maintenance and Repair – Expensed|E
+7267|Personal Property – Maintenance and Repair – Computer Equipment – Expensed|E
+7270|Real Property – Infrastructure/Maintenance and Repair – Expensed|E
+7271|Real Property – Land/Maintenance and Repair – Expensed|E
+7272|Hazardous Waste Disposal Services|E
+7273|Reproduction and Printing Services|E
+7274|Temporary Employment Agencies|E
+7275|Computer Programming Services|E
+7276|Communication Services|E
+7277|Cleaning Services|E
+7278|Placement Services|E
+7279|Placement Services-Convicts|E
+7280|Client-Worker Services|E
+7281|Advertising Services|E
+7282|Petroleum Storage Tank Cleanup Reimbursements|E
+7283|Waste Tire Recycling Program|E
+7284|Data Processing Services|E
+7285|Computer Services – Statewide Technology Center|E
+7286|Freight/Delivery Service|E
+7291|Postal Services|E
+7292|DIR Payments to Statewide Technology Center|E
+7293|Statewide Telecommunications Network|E
+7295|Investigation Expenses|E
+7297|Emergency Abatement Response|E
+7299|Purchased Contracted Services|E
+7300|Consumables|E
+7302|Computer Consumables|E
+7303|Subscriptions, Periodicals, and Information Services|E
+7304|Fuels and Lubricants – Other|E
+7307|Fuels and Lubricants – Aircraft|E
+7309|Promotional Items|E
+7310|Chemicals and Gases|E
+7312|Medical Supplies|E
+7315|Food Purchased by the State|E
+7316|Food Purchased for Wards of the State|E
+7322|Personal Items – Wards of the State|E
+7324|Credit Card Purchases for Clients or Wards of the State|E
+7325|Services for Wards of the State|E
+7327|Credit Card Purchases – Non-Capital Less than $5,000|E
+7328|Supplies/Materials – Agriculture, Construction, and Hardware|E
+7330|Parts – Furnishings and Equipment|E
+7331|Plants|E
+7333|Fabrics and Linens|E
+7334|Personal Property – Furnishings, Equipment and Other – Expensed|E
+7335|Parts – Computer Equipment – Expensed|E
+7336|Real Property – Facilities and Other Improvements – Capitalized|E
+7337|Real Property – Facilities and Other Improvements/ Capital Lease|E
+7338|Real Property – Facilities and Other Improvements/ Maintenance and Repairs – Expensed|E
+7340|Real Property and Improvements – Expensed|E
+7341|Real Property – Construction in Progress – Capitalized|E
+7342|Real Property – Buildings – Capitalized|E
+7343|Real Property – Building Improvements – Capitalized|E
+7344|Leasehold Improvements – Capitalized|E
+7345|Real Property – Land – Capitalized|E
+7346|Real Property – Land Improvements – Capitalized|E
+7347|Real Property – Construction in Progress/Highway Network – Capitalized|E
+7348|Real Property – Land/Highway Right-of-Way – Capitalized|E
+7349|Construction of Roads|E
+7350|Real Property – Buildings/Capital Lease|E
+7351|Personal Property – Passenger Cars/Capital Lease|E
+7352|Personal Property – Other Motor Vehicles/Capital Lease|E
+7354|Leasehold Improvements – Expensed|E
+7356|Real Property – Infrastructure – Capitalized|E
+7357|Real Property – Infrastructure/Preservation Costs – Capitalized|E
+7358|Real Property – Infrastructure/Preservation Costs – Expensed|E
+7361|Personal Property – Capitalized|E
+7365|Personal Property – Boats – Capitalized|E
+7366|Personal Property – Capital Lease|E
+7367|Personal Property – Maintenance and Repair – Expensed|E
+7368|Personal Property – Maintenance and Repairs/Motor Vehicle – Expensed|E
+7369|Personal Property – Works of Art and Historical Treasures – Capitalized|E
+7371|Personal Property – Passenger Cars – Capitalized|E
+7372|Personal Property – Other Motor Vehicles – Capitalized|E
+7373|Personal Property – Furnishings and Equipment – Capitalized|E
+7374|Personal Property – Furnishings and Equipment – Controlled|E
+7375|Personal Property – Aircraft – Capitalized|E
+7376|Personal Property – Furnishings and Equipment – Capital Lease|E
+7377|Personal Property – Computer Equipment – Expensed|E
+7378|Personal Property – Computer Equipment – Controlled|E
+7379|Personal Property – Computer Equipment – Capitalized|E
+7380|Personal Property – Computer Software – Expensed|E
+7382|Personal Property – Books and Reference Materials – Expensed|E
+7383|Textbooks for Public Free Schools|E
+7384|Personal Property – Animals – Expensed|E
+7385|Personal Property – Computer Equipment – Capital Lease|E
+7386|Personal Property – Animals – Capitalized|E
+7387|Personal Property – Computer Software – Capitalized|E
+7388|Personal Property – Construction in Progress – Fabrication of Equipment – Capitalized|E
+7389|Personal Property – Books and Reference Materials – Capitalized|E
+7391|Central Supply Retail Store|E
+7392|Land Purchased for Resale/Housing Loans|E
+7393|Merchandise Purchased for Resale|E
+7394|Raw Material Purchases|E
+7396|TxDOT Toll Road Expense - Preliminary Engineering|E
+7397|TxDOT Toll Road Expense - Construction|E
+7398|TxDOT Toll Road Expense - Construction Engineering|E
+7399|TxDOT Toll Road Expense - Right of Way|E
+7401|Rental of Radio Towers|E
+7406|Rental of Furnishings and Equipment|E
+7411|Rental of Computer Equipment|E
+7415|Rental of Computer Software|E
+7421|Rental of Reference Material|E
+7442|Rental of Motor Vehicles|E
+7443|Rental of Aircraft – Exempt|E
+7444|Charter of Aircraft|E
+7445|Rental of Aircraft|E
+7449|Rental of Marine Equipment|E
+7461|Rental of Land|E
+7462|Rental of Office Buildings or Office Space|E
+7468|Rental of Service Buildings|E
+7470|Rental of Space|E
+7501|Electricity|E
+7502|Natural and Liquefied Petroleum Gas|E
+7503|Telecommunications – Long Distance|E
+7504|Telecommunications – Monthly Charge|E
+7507|Water|E
+7510|Telecommunications – Parts and Supplies|E
+7512|Personal Property – Telecommunications Equipment – Capitalized|E
+7514|Real Property – Infrastructure/Telecommunications – Maintenance and Repair – Expensed|E
+7516|Telecommunications – Other Service Charges|E
+7517|Personal Property – Telecommunications Equipment – Expensed|E
+7518|Telecommunications – Dedicated Data Circuit|E
+7519|Real Property – Infrastructure – Telecommunications – Capital Lease|E
+7520|Real Property – Infrastructure – Telecommunications – Capitalized|E
+7521|Real Property – Infrastructure/Telecommunications – Expensed|E
+7522|Telecommunications – Equipment Rental|E
+7523|Telecommunications Equipment – Controlled|E
+7524|Other Utilities|E
+7526|Waste Disposal|E
+7530|Thermal Energy|E
+7535|Payroll Rel Costs-Bind Enc/Fin Rept Only|E
+7536|Prof Services-Bind Enc/Fin Rept Only|E
+7537|Travel-Bind Enc/Fin Rept Only|E
+7538|Material/Supplies-Bind Enc/Fin Rept Only|E
+7539|Comm/Utilities-Bind Enc/Fin Rept Only|E
+7540|Repair/Maint-Bind Enc/Fin Rept Only|E
+7541|Rental/Lease-Bind Enc/Fin Rept Only|E
+7542|Repro/Print Serv-Bind Enc/Fin Rept Only|E
+7543|Claims/Judgement-Bind Enc/Fin Rept Only|E
+7544|Non-Faculty Salaries/Wages-Bind.Enc/Fm.R|E
+7545|Faculty Salaries/Wages-Bind Enc/Fin Rpt|E
+7546|Other Exp-Bind Enc/Fin Rept Only|E
+7547|Capital Outlay-Bind Enc/Fin Rept Only|E
+7548|Debt Serv/Princpl-Bind Enc/Fin Rept Only|E
+7549|Debt Serv/Intrst-Bind Enc/Fin Rept Only|E
+7550|Hi-Ed Other Deductions|E
+7551|Hi-Ed Mand Transf-Ret Debt, Bldg Use Fees|E
+7552|Hi-Ed Mand Transf-Ret Debt, Tuition|E
+7553|Hi-Ed Mand Transf-Ret Debt, Aux. Ent.|E
+7555|Hi-Ed Mand Trnsf-Ret Debt, Desig. Funds|E
+7556|Hi-Ed Mand Trnsf-Ret Debt,Unexp Plant Fnd|E
+7557|Hi-Ed Expended For Plant Facilities|E
+7558|Hi-Ed Admin & Collection Costs|E
+7559|Hi-Ed Unemployment Comp Claims|E
+7560|Hi-Ed Workers Comp Reimburse to State|E
+7561|Hi-Ed Travel Students|E
+7562|Hi-Ed Travel Non-Emp/Non-Student|E
+7563|Hi-Ed Royalties Paid|E
+7564|Hi-Ed Int&Other Fin Fees On Indebt-Ex B|E
+7565|Hi-Ed Fines & Penalties|E
+7566|Hi-Ed Retirement Indebt-Notes & Loans Pay|E
+7567|Hi-Ed Development Fees|E
+7568|Hi-Ed Officiating Athletic Events|E
+7569|Hi-Ed Collection Agency Fees|E
+7570|Hi-Ed Taxes Ubit|E
+7571|Hi-Ed Taxes - Federal Exise|E
+7572|Hi-Ed Taxes - Property|E
+7573|Hi-Ed Taxes - Sales|E
+7574|Hi-Ed Other Business Related Functions|E
+7575|Hi-Ed Net Incr Accrued Comp Abs-Ex B|E
+7576|Hi-Ed Net Incr In Allowance-Ex B Only|E
+7577|Hi-Ed Official Functions|E
+7578|Hi-Ed Refunded to Grantors|E
+7579|Hi-Ed Net Decr In Inventory-Report Only|E
+7580|Hi-Ed Realized Loss Invest Inst Fds|E
+7581|Hi-Ed Purch Museum Artifts/Art Col-Captl|E
+7582|Hi-Ed Net Inc Lease Payble-Fin Rept Only|E
+7583|Hi-Ed Scholarship/Fellowshp/Waivers/Exem|E
+7584|Hi-Ed Lapsed Appropriations|E
+7585|Hi-Ed Indirect Costs Recovered|E
+7586|Hi-Ed Net Inc In Bonds Payable|E
+7587|Hi-Ed Net Inc Variable Rate Notes Payabl|E
+7588|Hi-Ed Disposal Of Plant Facilities|E
+7589|Hi-Ed Restatements|E
+7590|Hi-Ed Retirement Indebt-Rev. & G.O. Bonds|E
+7591|Hi-Ed Mand Trnsf-Ret Debt,Skiles Act Fds|E
+7592|Hi-Ed Mand. Trnsf./Loan Fnd & Grant Match|E
+7593|Hi-Ed Other Mandatory Transfers|E
+7594|Hi-Ed Non-Mandatory Transfers Out|E
+7595|Hi-Ed Expenses Recovered Summary|E
+7596|Hi-Ed Mand.Trnsf, Renewals & Replacements|E
+7597|Hi-Ed Loan Cancellations & Write-Offs|E
+7598|Hi-Ed Mandate Trsf-Retire Of Indebt-Ex B|E
+7599|Hi-Ed Reclass to Other Components-Ex B|E
+7601|Grants – Elementary and Secondary Schools|E
+7602|School Apportionment – Foundation Program|E
+7603|Grants – Junior Colleges|E
+7604|Grants – Senior Colleges and Universities|E
+7611|Payments/Grants – Cities|E
+7612|Payments/Grants – Counties|E
+7613|Payments/Grants – Other Political Subdivisions|E
+7614|State Grant Pass-Through Expenditure – Non-Operating|E
+7615|State Grant Pass-Through Expenditure – Operating|E
+7621|Grants – Council of Governments|E
+7622|Grants – Judicial Districts|E
+7623|Grants – Community Service Programs|E
+7624|Grants to Individuals|E
+7634|Passthru Fds/St Agy Pmt to Hi-Ed Local Fd|E
+7636|Texas Tomorrow Fund – Payment of Prepaid Tuition and Required Higher Education Fees|E
+7637|Texas Tomorrow Fund – Payment of Required Higher Education Fees|E
+7638|Texas Tomorrow Fund – Excess Tuition/Fee Payment to Beneficiary|E
+7639|Texas Tomorrow Fund – Payment of Earnings to Purchaser (Due Upon Refund)|E
+7640|Public Assistance – Child Support Payments, Non-Title IV-D|E
+7641|Public Assistance – Temporary Assistance for Needy Families (TANF)|E
+7642|Public Assistance – Child Support Payments, Title IV-D|E
+7643|Other Financial Services|E
+7644|Commodity Distribution Program|E
+7645|Disaster Relief Payments|E
+7651|Financial Services – Discharged Convicts|E
+7652|Financial Services – Rehabilitation Clients|E
+7661|Medical Services – Nursing Home Programs|E
+7662|Vendor Drug Program|E
+7664|Supplementary Medical Insurance Benefits|E
+7666|Medical Services and Specialties|E
+7667|Federal Pass-Through Expenditure from Health to Medicaid Insurance Provider|E
+7671|Grants-in-Aid (Day Care)|E
+7672|Grants-in-Aid (Foster Care)|E
+7673|Grants-in-Aid (Care for Aged, Blind and Disabled)|E
+7674|Grants-in-Aid (Services for Children/Clients)|E
+7676|Grants-in-Aid (Transportation)|E
+7677|Family Planning Services|E
+7678|Employment Social Services|E
+7679|Grants – College/Vocational Students|E
+7680|Grants-in-Aid (Food)|E
+7681|Grants – Survivors|E
+7683|Allocation to Cities – Mixed Beverage Tax|E
+7684|Allocation to Counties – Mixed Beverage Tax|E
+7685|Allocation to Taxing Unit – Bank Franchise Tax|E
+7686|Breakage Payments – Horse Racing|E
+7687|Breakage Payments – Greyhound Racing|E
+7688|Allocation for International Fuels Tax Agreement (IFTA)|E
+7695|Rebates – Alternative Fuels|E
+7696|Rebates – Tuition|E
+7697|Grants – Public Incentive Programs|E
+7701|Loans to Political Subdivisions|E
+7702|Loans to College Students|E
+7703|Purchase of Water Rights|E
+7704|Loans to Medical Students – Rural Medicine|E
+7705|Loans to Non-Governmental Entities|E
+7706|Loans to Provide Financial Assistance for Texas Agricultural Products|E
+7707|Loans to Other State Agencies|E
+7708|Repayment of Loans to Other State Agency|E
+7711|Purchase of Mortgage Investments – Long-Term|E
+7712|Purchase of Real Estate Investments|E
+7713|Purchase of Miscellaneous Short-Term Investments and Short-Term Investment Funds|E
+7714|Purchase of Miscellaneous Investments – Long-Term|E
+7715|Purchase of Corporate Securities – Long-Term|E
+7716|Purchase of Certificates of Deposits – Short-Term|E
+7717|Purchase of Certificate of Deposits – Long-Term|E
+7718|Purchase of Repurchase Agreements|E
+7719|Purchase of Other Public Obligations – Short-Term|E
+7720|Purchase of Other Public Obligations – Long-Term|E
+7721|Purchase of Corporate Obligations – Short-Term|E
+7722|Purchase of Corporate Obligations – Long-Term|E
+7723|Purchase of United States Government Obligations – Short-Term|E
+7724|Purchase of United States Government Obligations – Long-Term|E
+7725|Purchase of Corporate Securities – Short-Term|E
+7726|Purchase of Mortgage Investments – Short-Term|E
+7731|Premium/Discount on Mortgage Investments|E
+7732|Premium/Discount on Miscellaneous Investments|E
+7733|Premium/Discount on Other Public Obligations|E
+7734|Premium/Discount on United States Corporate Obligations|E
+7735|Premium/Discount on United States Government Obligations|E
+7739|Investing Activities Expense|E
+7740|Borrower Rebates on Security Lending|E
+7741|Agent Fees on Security Lending|E
+7779|Emergency Appn-Faculty/Academic Salaries|E
+7780|Emergency Appn-Salaries and Wages|E
+7781|Emergency Appn-Travel (Fica Withholding)|E
+7782|Emergency Appn-Travel|E
+7783|Emergency Appn-Professional Services|E
+7784|Emergency Appn-Repair & Maintenance|E
+7785|Emergency Appn-Reprod. & Printing Svcs|E
+7786|Emergency Appn-Materials and Supplies|E
+7787|Emergency Appn-Capital Outlay|E
+7788|Emergency Appn-Rental and Lease|E
+7789|Emergency Appn-Communication & Utilities|E
+7790|Emergency Appn-Other Expenditures|E
+7800|Defeasance of State Bonds|E
+7801|Interest on Governmental and Fiduciary Long-Term Debt|E
+7802|Interest – Other|E
+7803|Principal on State Bonds|E
+7804|Principal on Other Indebtedness|E
+7805|County Road Bond Payments|E
+7806|Interest on Delayed Payments|E
+7807|Principal on Tax and Revenue Anticipation Notes|E
+7808|Arbitrage|E
+7809|Other Financing Fees|E
+7810|Defeasance of State Bonds – Refunded|E
+7811|Interest on Refund or Credit of Tax or Fee|E
+7812|Interest on Protest Payments|E
+7814|Interest on Proprietary Long-Term Debt – Operating|E
+7815|Interest on Proprietary Long-Term Debt – Non-Operating|E
+7829|Disburse Medicaid Incentive Transfer – State (UPL)|E
+7830|Disbursement of Disproportionate Share Funds/ State Hospitals|E
+7831|Disbursement of Disproportionate Share Funds/ Non-State Hospitals|E
+7832|State Hospital Payments of State Matching Disproportionate Share and Upper Payment Limit (UPL) Funds|E
+7835|Disbursement Medicaid Incentive Transfers|E
+7855|Impairment Loss - Expense|R
+7856|Impairment Loss - Special Item|R
+7857|Impairment Loss - Extraordinary Item|R
+7858|Decr Net Asset D/T Intagy Trns Cap Asset|E
+7860|Depreciation Expense|E
+7861|Amortization Expense|E
+7862|Bad Debt Expense|E
+7863|Net Change In Reserve For Inventories|E
+7864|Lapsed Appropriations|E
+7865|Loss On Sale Of Investment|E
+7866|Loss On Sale Of Invest, Non-Cash/Non-Opr|E
+7867|Misc Claims Adj, Non-Cash, 902 Only|E
+7868|Uncollectable Debt|E
+7869|Misc Claim/Jdgmt/Sttlmnt Non-Cash Op Exp|E
+7870|Payment to Escrow for Refunding|E
+7871|Bond Issuance Expenses|E
+7874|Ttf-Higher Ed Savings Plan Withdrawals|E
+7880|Sum.Alloc.Dir Grant Cost/Equip Rent-Memo|E
+7881|Sum.Alloc.Dir Grant Cost/Stock Issu-Memo|E
+7882|Sum.Alloc.Dir Grant Cost/Sal-Labor-Memo|E
+7883|Sum.Alloc.Dir Cost/All Other-Memo Only|E
+7884|Sum.Alloc.Indir.Cost/Gen & Admin-Memo|E
+7899|Replenish Petty/Travel/Imprest Cash Shortage|E
+7900|Imprest Cash Advances|E
+7901|Interagency Purchase of Goods and Services|E
+7902|Trust or Suspense Payment|E
+7903|Return-Employee Retire Contrib|E
+7904|Petty Cash Advance|E
+7905|Travel Cash Advance|E
+7906|Social Services Advance|E
+7907|Summer Food Program Advance|E
+7908|Non-Governmental Agent Purchases|E
+7909|Teacher Retirement Reimbursement|E
+7910|Escheated Funds Payments|E
+7911|Allocation from Fund 0001 to GR Account – Foundation School 0193 (Dedicated Receipts)|E
+7912|Allocations from Fund 0001 to Unappropriated GR 0001 (Motor Fuel Tax Enforcement)|E
+7913|Transfer from Fund 0001 to Children Assistance Programs|E
+7914|Transfer from Fund 0001 to Medical Assistance Programs|E
+7915|Allocations from Fund 0068 to Fund 0001 – Mixed Beverage|E
+7916|Allocations from Fund 0001 to Farm to Market Road Fund 0189|E
+7917|Allocations from Fund 0001 to TRS Trust Account 0960, Retired School Employee GIP Trust 0989, and GR Account – Excess Benefit Arrangement, TRS 5031 (Dedicated Receipts)|E
+7918|Allocations from Fund 0001 to Fund 0001 Optional Teacher Retirement Program Trust Account|E
+7919|Allocations from Fund 0001 to GR 0001 (Unapp Undyed Diesel), Fund 0002, Fund 0006 and Fund 0057 (Motor Fuels Tax)|E
+7920|Allocation from Fund 0001 to Fund 0001 – Cigarette Tax|E
+7921|Allocation from Fund 0001 to State Parks Account 0064 – Cigarette Tax|E
+7922|Transfer from GR Account – Lottery 5025 to GR Account – Foundation School 0193 (Education)|E
+7923|Allocation from Fund 0001 to Unappropriated GR 0001 (Refund Filing Fees)|E
+7924|Allocations from Fund 0001 to GR Account – State Parks 0064, GR Account – Texas Recreation and Parks 0467, GR Account – Historic Site 5139 (Sporting Goods Tax)|E
+7925|Alloc 0001 to 0062-Cig Tax Enforce|E
+7926|Alloc 001 to 062-Cig Stamp Purch|E
+7927|Alloc 0001 to 0062-Crude Oil Enforce|E
+7928|Alloc 0001-0062-Natural Gas Enforce|E
+7929|Lottery Installment Payments – Subsequent Years|E
+7930|Trust Payments – City Sales Tax Allocation|E
+7931|Trust Payments – County Sales Tax Allocation|E
+7932|Trust Payments – MTA Sales Tax Allocation|E
+7933|Trust Payments – SPD Sales Tax Allocation|E
+7935|Allocation from Fund 0001 to Fund 0001 – Liquor Enforcement|E
+7936|Rp-Building&Improvmnts/Depreciation Exp|E
+7937|Rp-Facility&Other Improv/Depreciate Exp|E
+7938|Rp-Infrastructure/Depreciation Expense|E
+7939|Personal Property/Depreciation Expense|E
+7940|Other Transfers from Fund 0001 to GR Account – Hotel Occupancy Tax for Economic Development 5003|E
+7941|Transfers from Fund 0001 and Property Tax Relief Fund 304 to GR Account – Foundation School 0193|E
+7942|Other Transfers from Fund 0001 to Water Development Bond Interest and Sinking Fund 0352|E
+7943|Allocation from Fund 0001 for O.A.S.I./Retirement|E
+7944|Alloc Fd0001 to 0062-City Sales Tax Fee|E
+7945|Alloc 0001 to 0062-Mta Tax Fee|E
+7946|Alloc Fd 0001-0062-County Sales Tx Fee|E
+7947|State Office of Risk Management Assessments|E
+7948|Allocation from Fund 0001 to GR 0001 (Simulcast Pari-Mutuel)|E
+7949|Allocations from Fund 0001 to School Child Care Services Account|E
+7950|Depreciation Expense|E
+7951|Allocations from Special Funds – UB to Fund 0001 or Other Funds|E
+7952|Transfer of Disproportionate Share Funds to Unappropriated GR 0001|E
+7953|Statewide Cost Allocation Plan (SWCAP) Reimbursements to Unappropriated GR 0001|E
+7954|Allocations from Fund 0001 to GR 0001 (Motorboat and Other Fuels Tax Refunds)|E
+7955|Allocations from Available School Fund 0002 to State Textbook Fund 0003|E
+7956|Excess Priority Allocations from Fund 0001 to GR 0001|E
+7957|Excess Priority Allocations from Fund 0001 to GR Account – Foundation School 0193|E
+7958|Payment From State Appropriation to Local Account|E
+7960|Transfers from Permanent Education Funds to Available Education Funds|E
+7961|STS (TEX-AN) Transfers to General Revenue 0001|E
+7962|Capitol Complex Transfers to General Revenue 0001|E
+7963|Transfers from GR Account – Lottery 5025 to Unappropriated GR 0001 and GR Account – State Owned Multicategorical Teaching Hospital 5049|E
+7964|Master Lease Transfer Disbursements|E
+7965|Other Cash Transfers Out Between Funds and Accounts – Medicaid Only|E
+7966|Allocations for Coin Machine Enforcement|E
+7968|Operating Transfers Within Agency, Fund or Account, and Fiscal Year|E
+7969|Operating Transfers Out from GR – Agency 902 Transactions|E
+7970|Revenue and Expenditure Adjustments Within an Agency, Fund or Account and Fiscal Year|E
+7971|Federal Pass-Through Expenditure Interagency, Non-Operating for General Budgeted|E
+7972|Other Cash Transfers Between Funds or Accounts|E
+7973|Other Cash Transfers Within Fund or Account, Between Agencies|E
+7974|Federal Funds UB Cash Forward|E
+7975|Unexpended Cash Balance Forward|E
+7976|Earned Fed Fds Cash Balance Forward|E
+7977|Medicaid ICF/MR – Federal Portion|E
+7978|Federal Pass-Through Expenditure Interagency, Operating for General Budgeted|E
+7979|Other Transfers to GR 0001 (Service/Operating)|E
+7980|Operating Account Transfers Out|E
+7981|Central Services Account Transfers Out|E
+7982|Allocations from Federal Grants for O.A.S.I./ Retirement/Benefits|E
+7983|Agency Unappropriated Receipts Swept by Comptroller|E
+7984|Unemployment Compensation Benefit Transfers – Special Funds/Accounts to GR 0001 and Account 0165|E
+7985|Workers Compensation Payments Transfers – Special Funds/Accounts to GR Fund 0001|E
+7986|Unexpended Cash Balance Forward – Operating Transfers Out|E
+7987|Workers Compensation Revolving Account Transfers Out|E
+7988|Unemployment Compensation Revolving Account Transfers Out|E
+7989|Transfers from Fund 0001 to S.E.R.S. State Trust Account 0955 (Death Benefits)|E
+7990|Trans into GR0001/AG Oper|E
+7991|Residual Equity Transfers Out|E
+7993|USAS Initial Load (Exp Conv from FACTS)|E
+7994|Funds Consolidation Rpt Transfer-Expense|E
+7995|Shared Fund Trnsfr Out (Controlling Agy)|E
+7996|Direct Deposit Transfers|E
+7997|Residual Equity Non-Cash Transfers Out|E
+9400|Original Budget-Committed|R
+9401|Original Budget-Collected|R
+9403|Adjusted Budget-Committed|R
+9404|Adjusted Budget-Collected|R
+9406|UB Transfer Out-Exp Budget|R
+9407|UB Transfer In-Exp Budget|R
+9408|UB Transfer Out-Rev Budget|R
+9409|UB Transfer In-Rev Budget|R
+9410|Appropriation Transfer-In Committed|R
+9411|Appropriation Transfer-In Collected|R
+9415|Budget Reduction-Committed|R
+9416|Budget Reduction-Collected|R
+9420|OASI St Match Trf In from 902-Committed|R
+9421|OASI St Match Trf In from 902-Collected|R
+9425|Insur-St Pd Trf In from 327-Committed|R
+9426|Insur-St Pd Trf In from 327-Collected|R
+9427|Skip - St Pd Trf In from 327 - Committed|R
+9428|Skip - St Pd Trf In from 327 - Collected|R
+9435|Retir-St Match Trf In from 327-Committed|R
+9436|Retir-St Match Trf In from 327-Collected|R
+9440|BRP Transfer In from 902-Committed|R
+9442|BRP Transfer In from 902-Collected|R
+9445|Salary Incr Trf In from 902-Committed|R
+9447|Salary Incr Trf In from 902-Collected|R
+9448|Longevity Pay Incr Trf In from 902-Com|R
+9449|Longevity Pay Incr Trf In Fr 902-Coll|R
+9455|Year 2000 Transfer In (from 906)|R
+9460|Judicial Salary Transfer In (from 902)|R
+9465|Orp Transfer In from 902|R
+9470|Grp Ins Prog Transfer In-Self Ins (Gip)|R
+9475|HEAF Transfer Into HE from 902|R
+9476|HEAF Trnsfr Into Debt Service Appn|R
+9485|Workers Comp (75% Unreimbursed)|R
+9486|Unemployment (50% Unreimbursed)|R
+9498|Petty, Travel, Imprest Budget Increase|R
+9499|Invalid Rev Code/Appn Combination|R
+9515|Appropriation Transfer Out-Committed|E
+9516|Appropriation Transfer Out-Collected|E
+9520|Agy 902 OASI St Match Trf Out-Committed|E
+9521|Agy 902 OASI St Match Trf Out-Collected|E
+9525|Agy 327 Insur-St Paid Trf Out-Committed|E
+9526|Agy 327 Insur-St Paid Trf Out-Collected|E
+9535|Agy 327-Retir St Match Trf Out-Committed|E
+9536|Agy 327-Retir St Match Trf Out-Collected|E
+9540|Agy 902 BRP Transfer Out-Committed|E
+9541|BRP Trf Out to Strategies-Committed|E
+9542|Agy 902 BRP Transfer Out-Collected|E
+9543|BRP Trf Out to Strategies-Collected|E
+9545|Agy 902 Salary Incr Trf Out-Committed|E
+9546|Salary Incr Trf Out to Strat-Committed|E
+9547|Agy 902 Salary Incr Trf Out-Collected|E
+9548|Salary Incr Trf Out to Strat-Collected|E
+9555|Year 2000 Transfer Out (from 906)|E
+9560|Judicial Sal Inc Trsfer Out from 902|E
+9561|Judicial Sal Inc Trsfer Out to Strat|E
+9565|Orp Trnfer to Higher Education from 902|E
+9570|Grp Ins Prog Trsfr Out-Self Insured(Gip)|E
+9575|Agy 902-HEAF,Tef,Urf Trns Out-Committed|E
+9576|HEAF Trnsfr Out to Debt Service Appn|E
+9577|Agy 902-HEAF,Tef,Urf Trns Out-Collected|E
+9580|Lapsed Committed Revenue Appropriations|E
+9585|Statewide Allocation Leg. Transfers|E
+9590|Longevity Pay Increase 902 Trf Out-Comm|E
+9591|Longevity Pay Incr Trf Out to Strat-Comm|E
+9592|Longevity Pay Incr 902 Trf Out-Collected|E
+9593|Longevity Pay Incr Trf Out to Strat-Coll|E
+9599|Invalid Expendture Code/Appn Combination|E
+9998|Statistical Object|S

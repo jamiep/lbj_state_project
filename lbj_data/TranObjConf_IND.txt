@@ -1,0 +1,6 @@
+Confidential_Ind	Description
+-----	
+Y			Confidential information (Mask vendor name)
+N			No confidential information
+			Space is no confidential information		
+S			Some information is confidential on transaction level

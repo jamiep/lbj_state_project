@@ -1,0 +1,4 @@
+Y|Confidential information (Mask vendor name)
+N|No confidential information
+ |No confidential information (space)
+S|Some information is confidential on transaction level

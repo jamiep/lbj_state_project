@@ -2348,3 +2348,1013 @@ Processing DataViewController#view (for 127.0.0.1 at 2010-03-29 19:28:38) [GET]
 Rendering data_view/view
   [4;36;1mRecord Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tceq_2008_v2`[0m
 Completed in 11ms (View: 5, DB: 3) | 200 OK [http://localhost/data_view/view?data=Comptroller+Object+Category&year=2008&agency1=CO&agency2=CO&commit=Save+changes]
+/!\ FAILSAFE /!\  2010-04-08 01:40:38 -0600
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:40:47 -0600
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:43:27 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:46:33 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:46:40 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:46:42 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:54:13 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 01:54:20 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 15:32:39 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-04-08 15:32:52 -0600
+  Status: 500 Internal Server Error
+  Could not open library 'libsqlite3': The specified module could not be found.
+. Could not open library 'libsqlite3.dll': The specified module could not be found.
+. Could not open library 'sqlite3': The specified module could not be found.
+. Could not open library 'sqlite3.dll': The specified module could not be found.
+
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:61:in `block in ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `map'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/ffi-0.6.3-x86-mingw32/lib/ffi/library.rb:43:in `ffi_lib'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:7:in `<module:API>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:2:in `<module:SQLite3>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3/api.rb:1:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-0.0.8/lib/sqlite3.rb:3:in `<top (required)>'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    c:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+Processing DataViewController#home (for 127.0.0.1 at 2010-04-08 15:39:26) [GET]
+Rendering data_view/home
+Completed in 234ms (View: 234, DB: 0) | 200 OK [http://localhost/data_view/home]
+
+
+Processing DataViewController#view (for 127.0.0.1 at 2010-04-08 15:39:42) [GET]
+  Parameters: {"data"=>"Comptroller Object Category", "year"=>"2008", "agency1"=>"COCT", "agency2"=>"CO", "commit"=>"Save changes"}
+  [4;36;1mRecord Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: tceq_2008_v2: SELECT * FROM "tceq_2008_v2" LIMIT 10[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: tceq_2008_v2: SELECT * FROM "tceq_2008_v2"  LIMIT 10):
+  app/controllers/data_view_controller.rb:9:in `view'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 16:12:40) [GET]
+
+ActionController::RoutingError (No route matches "/couch/list" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:13:45) [GET]
+Rendering couch/list
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/couch/list]
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:17:54) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:2:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:18:49) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:18:51) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (531.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:18:53) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:18:56) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:18:57) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (734.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:19:06) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:19:07) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:19:22) [GET]
+Rendering couch/list
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/couch/list]
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2010-04-08 16:19:29) [GET]
+
+MissingSourceFile (no such file to load -- couchrest):
+  app/controllers/couch_controller.rb:3:in `<class:CouchController>'
+  app/controllers/couch_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (875.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:21:48) [GET]
+Rendering couch/list
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/couch/list]
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:21:56) [GET]
+Rendering couch/list
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/couch/list]
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:25:28) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:68:in `get'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:13:in `get'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:18:in `get'
+  couchrest (0.37) lib/couchrest/core/database.rb:97:in `get'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:27:57) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:68:in `get'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:13:in `get'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:18:in `get'
+  couchrest (0.37) lib/couchrest/core/database.rb:97:in `get'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (343.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:27:59) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:68:in `get'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:13:in `get'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:18:in `get'
+  couchrest (0.37) lib/couchrest/core/database.rb:97:in `get'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (234.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:28:00) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:68:in `get'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:13:in `get'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:18:in `get'
+  couchrest (0.37) lib/couchrest/core/database.rb:97:in `get'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:28:01) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:68:in `get'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:13:in `get'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:18:in `get'
+  couchrest (0.37) lib/couchrest/core/database.rb:97:in `get'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (484.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:30:06) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:72:in `post'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:17:in `post'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:31:in `post'
+  couchrest (0.37) lib/couchrest/core/database.rb:187:in `rescue in save_doc'
+  couchrest (0.37) lib/couchrest/core/database.rb:183:in `save_doc'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:30:10) [GET]
+
+RestClient::ResourceNotFound (Resource Not Found):
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `block in transmit'
+  c:/Ruby19/lib/ruby/1.9.1/net/http.rb:564:in `start'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/Ruby19/lib/ruby/gems/1.9.1/gems/rest-client-1.4.2/lib/restclient.rb:72:in `post'
+  couchrest (0.37) lib/couchrest/core/adapters/restclient.rb:17:in `post'
+  couchrest (0.37) lib/couchrest/core/rest_api.rb:31:in `post'
+  couchrest (0.37) lib/couchrest/core/database.rb:187:in `rescue in save_doc'
+  couchrest (0.37) lib/couchrest/core/database.rb:183:in `save_doc'
+  app/controllers/couch_controller.rb:6:in `list'
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (640.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:31:03) [GET]
+Rendering couch/list
+
+ActionView::TemplateError (undefined local variable or method `doc' for #<ActionView::Base:0x2d9b6c0>) on line #2 of app/views/couch/list.html.erb:
+1: <h1>Couch#list</h1>
+2: <%= doc.inspect %>
+
+    app/views/couch/list.html.erb:2
+    <internal:prelude>:8:in `synchronize'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (234.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CouchController#list (for 127.0.0.1 at 2010-04-08 16:31:20) [GET]
+Rendering couch/list
+Completed in 328ms (View: 94, DB: 0) | 200 OK [http://localhost/couch/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 16:40:09) [GET]
+
+ActionController::RoutingError (No route matches "/parse.rb" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 16:40:45) [GET]
+
+ActionController::RoutingError (No route matches "/ds.rb" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-08 16:40:58) [GET]
+
+ActionController::RoutingError (No route matches "/parse.fb" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
