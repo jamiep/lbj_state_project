@@ -1,3 +1,5 @@
+git commit -C ORIG_HEAD
+
 require 'time'
 require 'rubygems'
 require 'couchrest'
