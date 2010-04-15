@@ -99,7 +99,7 @@ class DataViewController < ApplicationController
       :chart => {
         :defaultSeriesType => 'line'
       },
-      :title => { :text => 'Dollars Spent per Comptroller Object Category per Year' },
+      :title => { :text => 'Dollars Spent per Comptroller Object Category per Month for %d' % @year },
       :xAxis => {
         :categories => @months,
         :title => { :text => 'Month (%d)' % @year }

@@ -1,5 +1,13 @@
 <h1>Comptroller Spending</h1>
 
+<select name="year_select" id="year_select" size="1" disabled="disabled">
+	<option value="2007">2007</option>
+	<option value="2008" selected="selected">2008</option>
+	<option value="2008">2009</option>
+</select>
+
+<%= image_tag 'ajax-loader.gif', :id => 'loader' %>
+
 <div id="chart-container-1">
   
 </div>
@@ -8,14 +16,36 @@
 <script type="text/javascript" charset="utf-8">
 var chart1; // globally available
 $(document).ready(function() {
-  $.getJSON('/data_view/by_month?year=2008', function(response){
+  new_chart('/data_view/by_month?year=2008');
+	$('#year_select').change(year_change);
+});
+
+function new_chart(url){
+	disable_input();
+	$.getJSON(url, function(response){
 	//$.getJSON('/data_view/by_year', function(response){
 		if(response.status == 'ok'){
 			var options = response.options;
 			options.chart.renderTo = 'chart-container-1';
     	chart1 = new Highcharts.Chart(options);
+			enable_input();
 		}
   });
-});
+}
+
+function disable_input(){
+	$('#loader').show();
+	$('#year_select').attr('disabled','disabled');
+}
+
+function enable_input(){
+	$('#loader').hide();
+	$('#year_select').removeAttr('disabled');
+}
+
+function year_change(){
+	var year = $("#year_select option:selected").text();
+	new_chart('/data_view/by_month?year='+year);
+}
 </script>
 <% end %>
