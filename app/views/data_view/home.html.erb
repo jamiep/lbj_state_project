@@ -1,7 +1,5 @@
 <h1>Comptroller Spending</h1>
 
-<h2>Categories Spend per <span id="timespan">Year</span></h2>
-
 <div id="chart-container-1">
   
 </div>
@@ -10,26 +8,13 @@
 <script type="text/javascript" charset="utf-8">
 var chart1; // globally available
 $(document).ready(function() {
-  var options = {
-    chart: {
-      renderTo: 'chart-container-1',
-      defaultSeriesType: 'line'
-    },
-    title: {
-      text: 'Fruit Consumption'
-    },
-    xAxis: {
-      categories: ['Dollars Spent']
-    },
-    yAxis: {
-      title: {
-         text: 'Fruit eaten'
-      }
-    }
-  }
-  $.getJSON('/data_view/by_year', function(data){
-    options.series = data;
-    chart1 = new Highcharts.Chart(options);
+  $.getJSON('/data_view/by_month?year=2008', function(response){
+	//$.getJSON('/data_view/by_year', function(response){
+		if(response.status == 'ok'){
+			var options = response.options;
+			options.chart.renderTo = 'chart-container-1';
+    	chart1 = new Highcharts.Chart(options);
+		}
   });
 });
 </script>
