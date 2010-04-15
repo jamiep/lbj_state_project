@@ -1,25 +1,36 @@
-<h1>DataView#home</h1>
-<p>Find me in app/views/data_view/home.html.erb</p>
+<h1>Comptroller Spending</h1>
 
-<h1>ENTER DATA</h1>
+<h2>Categories Spend per <span id="timespan">Year</span></h2>
 
-<% form_tag({:action => 'view'}, :method => 'get')  do %>
-<%= radio_button_tag(:data, "Comptroller Object") %>
-  <%= label_tag(:data_comptroller_object, "Comptroller Object4") %> <br />
-<%= radio_button_tag(:data, "Comptroller Object Category") %>
-  <%= label_tag(:data_comptroller_object_category, "Comptroller Object Category4") %> <br />
-<%= radio_button_tag(:data, "Vendor Payee Display Name") %>
-  <%= label_tag(:data_VPDN, "Vendor Payee Display Name") %> <br />
+<div id="chart-container-1">
+  
+</div>
 
-<%= select_tag :year, options_for_select(@years) %>
-
-<p> Select agencies to compare: </p>
-<%= select_tag :agency1, options_for_select(@agencies) %> with <br />
-<%= select_tag :agency2, options_for_select(@agencies) %>
-
-<br />
-<br />
-
-<%= submit_tag %>
-
+<% content_for :js do %>
+<script type="text/javascript" charset="utf-8">
+var chart1; // globally available
+$(document).ready(function() {
+  var options = {
+    chart: {
+      renderTo: 'chart-container-1',
+      defaultSeriesType: 'line'
+    },
+    title: {
+      text: 'Fruit Consumption'
+    },
+    xAxis: {
+      categories: ['Dollars Spent']
+    },
+    yAxis: {
+      title: {
+         text: 'Fruit eaten'
+      }
+    }
+  }
+  $.getJSON('/data_view/by_year', function(data){
+    options.series = data;
+    chart1 = new Highcharts.Chart(options);
+  });
+});
+</script>
 <% end %>
