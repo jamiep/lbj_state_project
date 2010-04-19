@@ -4,7 +4,7 @@ class DataViewController < ApplicationController
     
   end
 
-  def total
+  def category_total
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
     @totals = @db.view('comp_obj_category/year_month?group_level=1')
     @data = []
@@ -21,7 +21,7 @@ class DataViewController < ApplicationController
     render :json => @data
   end
 
-  def by_year
+  def category_by_year
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
     @by_year = @db.view('comp_obj_category/year_month?group_level=2&reverse=true')
     @points = {}
@@ -67,7 +67,7 @@ class DataViewController < ApplicationController
     render :json => @response
   end
   
-  def by_month
+  def category_by_month
     @year = params[:year]
     if @year.nil? or not [2007,2008,2009].include? @year.to_i
       @response = { :status => 'bad year' }
