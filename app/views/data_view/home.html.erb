@@ -1,33 +1,66 @@
 <h1>Comptroller Spending</h1>
 
-<select name="year_select" id="year_select" size="1" disabled="disabled">
+<div id="charts">
+  
+</div>
+
+<label for="type_select">Type:</label>
+<select name="type_select" id="type_select" size="1">
+	<option value="category" selected="selected">category</option>
+</select>
+<br />
+
+<label for="year_select">Year:</label>
+<select name="year_select" id="year_select" size="1">
 	<option value="2007">2007</option>
 	<option value="2008" selected="selected">2008</option>
 	<option value="2008">2009</option>
 </select>
+<br />
+
+<label for="category_select">Categories:</label><br />
+<select name="category_select" id="category_select" size="1">
+  <option value="Travel">Travel</option>
+  <option value="Supplies and Materials">Supplies and Materials</option>
+  <option value="Salaries and Wages">Salaries and Wages</option>
+  <option value="Repairs and Maintenance">Repairs and Maintenance</option>
+  <option value="Rentals and Leases">Rentals and Leases</option>
+  <option value="Public Assistance Payments">Public Assistance Payments</option>
+  <option value="Professional Service and Fees">Professional Service and Fees</option>
+  <option value="Printing and Reproduction">Printing and Reproduction</option>
+  <option value="Other Expenditures">Other Expenditures</option>
+  <option value="Intergovernmental Payments">Intergovernmental Payments</option>
+</select>
+
+<br />
+<input type="submit" name="create_chart" value="Create New Chart" id="create_chart">
 
 <%= image_tag 'ajax-loader.gif', :id => 'loader' %>
 
-<div id="chart-container-1">
-  
-</div>
-
 <% content_for :js do %>
 <script type="text/javascript" charset="utf-8">
-var chart1; // globally available
+var charts = [];
+var chart_count = 0;
 $(document).ready(function() {
-  new_chart('/data_view/category_by_month?year=2008');
-	$('#year_select').change(year_change);
+  enable_input();
+  $('#create_chart').click(function(e){
+    var type = $("#type_select option:selected").text();
+    var year = $("#year_select option:selected").text();
+    new_chart('/data_view/'+type+'_by_month', {year:year});
+  });
 });
 
-function new_chart(url){
+function new_chart(url, data){
+  data = data || {};
 	disable_input();
-	$.getJSON(url, function(response){
-	//$.getJSON('/data_view/by_year', function(response){
+	$.getJSON(url, data, function(response){
 		if(response.status == 'ok'){
 			var options = response.options;
-			options.chart.renderTo = 'chart-container-1';
-    	chart1 = new Highcharts.Chart(options);
+			var chart_id = 'chart-container-'+chart_count;
+			$('#charts').append($('<div id="'+chart_id+'">'));
+			options.chart.renderTo = chart_id;
+    	charts[chart_count] = new Highcharts.Chart(options);
+    	chart_count += 1;
 			enable_input();
 		}
   });
@@ -35,17 +68,12 @@ function new_chart(url){
 
 function disable_input(){
 	$('#loader').show();
-	$('#year_select').attr('disabled','disabled');
+	$('#create_chart').attr('disabled','disabled');
 }
 
 function enable_input(){
 	$('#loader').hide();
-	$('#year_select').removeAttr('disabled');
-}
-
-function year_change(){
-	var year = $("#year_select option:selected").text();
-	new_chart('/data_view/by_month?year='+year);
+	$('#create_chart').removeAttr('disabled');
 }
 </script>
 <% end %>
