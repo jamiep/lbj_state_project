@@ -1,0 +1,17 @@
+#filter_form{
+  border:1px solid;
+  padding:15px;
+}
+
+#filter_form .section{
+  padding:10px 0;
+}
+
+#filter_form .section.cats{
+  border: 1px solid;
+  padding-left: 10px;
+}
+
+#filter_form a:visited{
+  color:#0000ff;
+}

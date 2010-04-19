@@ -69,6 +69,7 @@ class DataViewController < ApplicationController
   
   def category_by_month
     @year = params[:year]
+    @cats = params[:cats]
     if @year.nil? or not [2007,2008,2009].include? @year.to_i
       @response = { :status => 'bad year' }
       return render :json => @response
@@ -89,6 +90,7 @@ class DataViewController < ApplicationController
     
     @data = []
     for cat, pset in @points
+      next if not @cats.include? cat
       @data.push({
         'name' => cat,
         'data' => pset

@@ -3,37 +3,42 @@
 <div id="charts">
   
 </div>
+<div id="filter_form">
+  <div class="section">
+    <label for="type_select">Type:</label>
+    <select name="type_select" id="type_select" size="1">
+    	<option value="category" selected="selected">Category</option>
+    </select>
+  </div>
+  <div class="section">
+    <label for="year_select">Year:</label>
+    <select name="year_select" id="year_select" size="1">
+    	<option value="2007">2007</option>
+    	<option value="2008" selected="selected">2008</option>
+    	<option value="2008">2009</option>
+    </select>
+  </div>
 
-<label for="type_select">Type:</label>
-<select name="type_select" id="type_select" size="1">
-	<option value="category" selected="selected">category</option>
-</select>
-<br />
 
-<label for="year_select">Year:</label>
-<select name="year_select" id="year_select" size="1">
-	<option value="2007">2007</option>
-	<option value="2008" selected="selected">2008</option>
-	<option value="2008">2009</option>
-</select>
-<br />
-
-<label for="category_select">Categories:</label><br />
-<select name="category_select" id="category_select" size="1">
-  <option value="Travel">Travel</option>
-  <option value="Supplies and Materials">Supplies and Materials</option>
-  <option value="Salaries and Wages">Salaries and Wages</option>
-  <option value="Repairs and Maintenance">Repairs and Maintenance</option>
-  <option value="Rentals and Leases">Rentals and Leases</option>
-  <option value="Public Assistance Payments">Public Assistance Payments</option>
-  <option value="Professional Service and Fees">Professional Service and Fees</option>
-  <option value="Printing and Reproduction">Printing and Reproduction</option>
-  <option value="Other Expenditures">Other Expenditures</option>
-  <option value="Intergovernmental Payments">Intergovernmental Payments</option>
-</select>
-
-<br />
-<input type="submit" name="create_chart" value="Create New Chart" id="create_chart">
+  <div class="section cats">
+    <label for="category_select">Categories:</label><br />
+    <select name="category_select" size="1">
+      <option value="Travel">Travel</option>
+      <option value="Supplies and Materials">Supplies and Materials</option>
+      <option value="Salaries and Wages">Salaries and Wages</option>
+      <option value="Repairs and Maintenance">Repairs and Maintenance</option>
+      <option value="Rentals and Leases">Rentals and Leases</option>
+      <option value="Public Assistance Payments">Public Assistance Payments</option>
+      <option value="Professional Service and Fees">Professional Service and Fees</option>
+      <option value="Printing and Reproduction">Printing and Reproduction</option>
+      <option value="Other Expenditures">Other Expenditures</option>
+      <option value="Intergovernmental Payments">Intergovernmental Payments</option>
+    </select>
+    <a class="add" href="#">Add another category</a>
+  </div>
+  <br />
+  <input type="submit" name="create_chart" value="Create New Chart" id="create_chart">
+</div>
 
 <%= image_tag 'ajax-loader.gif', :id => 'loader' %>
 
@@ -43,10 +48,24 @@ var charts = [];
 var chart_count = 0;
 $(document).ready(function() {
   enable_input();
+  $('#filter_form .cats .add').click(add_category);
   $('#create_chart').click(function(e){
-    var type = $("#type_select option:selected").text();
-    var year = $("#year_select option:selected").text();
-    new_chart('/data_view/'+type+'_by_month', {year:year});
+    var url = '';
+    var data = {};
+    
+    var type = $("#type_select option:selected").val();
+    if(type == 'category'){
+      data.year = $("#year_select option:selected").val();
+      var cats = {}; // use object to avoid duplicates
+      $('#filter_form .cats select[name=category_select] option:selected').each(function(i,obj){
+        cats[obj.getAttribute('value')] = true;
+      });
+      data.cats = [];
+      for(var cat in cats) data.cats.push(cat);
+      
+      url = '/data_view/'+type+'_by_month';
+    }
+    new_chart(url, data);
   });
 });
 
@@ -74,6 +93,11 @@ function disable_input(){
 function enable_input(){
 	$('#loader').hide();
 	$('#create_chart').removeAttr('disabled');
+}
+
+function add_category(){
+  $(this).before('<br>');
+  $(this).before($(this).prev().prev().clone());
 }
 </script>
 <% end %>
