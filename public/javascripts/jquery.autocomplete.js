@@ -117,17 +117,21 @@
         /**
          * Create DOM element to hold results, add class, position according to $elem
          */
-		this.dom.$results = $('<div></div>').hide();
+    if(this.options.resultsElem)
+      this.dom.$results = $(this.options.resultsElem).hide();
+    else
+		  this.dom.$results = $('<div></div>').hide();
 		if (this.options.resultsClass) {
 			this.dom.$results.addClass(this.options.resultsClass);
 		}
         var offset = this.dom.$elem.offset();
-		this.dom.$results.css({
+		/*this.dom.$results.css({
 			position: 'absolute',
 			top: offset.top + $elem.outerHeight(),
 			left: offset.left
 		});
 		$('body').append(this.dom.$results);
+		*/
 
         /**
          * Shortcut to self
@@ -544,7 +548,8 @@
 		var displayValue = this.displayValue(value, data);
 		this.lastProcessedValue_ = displayValue;
 		this.lastSelectedValue_ = displayValue;
-		this.dom.$elem.val(displayValue).focus();
+    // this.dom.$elem.val(displayValue).focus();
+    this.dom.$elem.val('').focus();
 		this.setCaret(displayValue.length);
 		this.callHook('onItemSelect', { value: value, data: data });
 		this.finish();

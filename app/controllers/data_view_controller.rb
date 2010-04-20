@@ -5,17 +5,25 @@ class DataViewController < ApplicationController
   end
 
   def vendor_suggest
-    # TODO: todo
-    @query = params[:q]
-    return render :nothing => true if @query.nil?
+    @q = params[:q].upcase
+    return render :nothing => true if @q.nil?
     
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
+    @matches = @db.view('vendor/year_month_day', {
+      :group_level => 1,
+      :startkey => [@q],
+      :endkey => [@q + "Z"],
+      :limit => 10
+    })
     
+    render :text => @matches['rows'].map { |row| row['key'] }.join('')
   end
 
   def category_total
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
-    @totals = @db.view('comp_obj_category/year_month?group_level=1')
+    @totals = @db.view('comp_obj_category/year_month', {
+      :group_level => 1
+    })
     @data = []
     @cats = []
     for doc in @totals['rows']
@@ -32,7 +40,10 @@ class DataViewController < ApplicationController
 
   def category_by_year
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
-    @by_year = @db.view('comp_obj_category/year_month?group_level=2&reverse=true')
+    @by_year = @db.view('comp_obj_category/year_month', {
+      :group_level => 2,
+      :reverse => true
+    })
     @points = {}
     @months = %w{ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec }
     @years = []
@@ -86,7 +97,10 @@ class DataViewController < ApplicationController
     @year = @year.to_i
     
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
-    @by_year = @db.view('comp_obj_category/year_month?group_level=3&reverse=true')
+    @by_year = @db.view('comp_obj_category/year_month', {
+      :group_level => 3,
+      :reverse => true
+    })
     @points = {}
     @months = %w{ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec }
     
