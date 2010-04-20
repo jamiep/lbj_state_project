@@ -75,9 +75,9 @@ $(document).ready(function() {
     var url = '';
     var data = {};
     
+    data.year = $("#year_select option:selected").val();
     var type = $("#type_select option:selected").val();
     if(type == 'category'){
-      data.year = $("#year_select option:selected").val();
       var cats = {}; // use object to avoid duplicates
       $('#filter_form .cats select[name=category_select] option:selected').each(function(i,obj){
         cats[obj.getAttribute('value')] = true;
@@ -86,6 +86,9 @@ $(document).ready(function() {
       for(var cat in cats) data.cats.push(cat);
       
       url = '/data_view/'+type+'_by_month';
+    }
+    else if(type == 'vendor'){
+      // var vendors = 
     }
     new_chart(url, data);
   });
@@ -129,8 +132,15 @@ function add_category(){
 }
 
 function add_vendor(selected){
-  console.log(selected);
   var vendor = selected.value;
+  // check for dupes
+  var dupe_exists = false;
+  $('#vendor_selected li').each(function(i,elem){
+    if(elem.innerHTML == vendor){
+      dupe_exists = true;
+    }
+  });
+  if(dupe_exists) return;
   var li = $('<li>').text(vendor);
   $('#vendor_selected').append(li);
   li.effect('highlight');
