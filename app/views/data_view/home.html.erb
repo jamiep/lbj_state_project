@@ -126,7 +126,8 @@ function change_type(){
   $('#filter_form .section[type-'+new_type+'=true]').show();
 }
 
-function add_category(){
+function add_category(e){
+  e.preventDefault();
   $(this).before('<br>');
   $(this).before($(this).prev().prev().clone());
 }
