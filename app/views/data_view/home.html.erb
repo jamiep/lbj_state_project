@@ -4,13 +4,15 @@
   
 </div>
 <div id="filter_form">
-  <div class="section">
+  <div class="section" all="true">
     <label for="type_select">Type:</label>
     <select name="type_select" id="type_select" size="1">
     	<option value="category" selected="selected">Category</option>
+    	<option value="vendor">Vendor</option>
     </select>
   </div>
-  <div class="section">
+  
+  <div class="section" all="true">
     <label for="year_select">Year:</label>
     <select name="year_select" id="year_select" size="1">
     	<option value="2007">2007</option>
@@ -19,8 +21,7 @@
     </select>
   </div>
 
-
-  <div class="section cats">
+  <div class="section cats" type-category="true">
     <label for="category_select">Categories:</label><br />
     <select name="category_select" size="1">
       <option value="Travel">Travel</option>
@@ -37,18 +38,28 @@
     <a class="add" href="#">Add another category</a>
   </div>
   <br />
+  
+  <div class="section vendors" type-vendor="true" style="display:none">
+    Vendors:
+    <input type="text" value="" id="vendor_search" /> Start typing to bring up suggestions
+  </div>
+  
   <input type="submit" name="create_chart" value="Create New Chart" id="create_chart">
 </div>
 
 <%= image_tag 'ajax-loader.gif', :id => 'loader' %>
 
 <% content_for :js do %>
+<script type="text/javascript" src="jquery.autocomplete.js"></script>
 <script type="text/javascript" charset="utf-8">
 var charts = [];
 var chart_count = 0;
 $(document).ready(function() {
   enable_input();
+  $('#type_select').change(change_type);
   $('#filter_form .cats .add').click(add_category);
+  // TODO: implement autosuggest server side
+  // $('#vendor_search').autocomplete('/data_view/vendor_suggest');
   $('#create_chart').click(function(e){
     var url = '';
     var data = {};
@@ -93,6 +104,12 @@ function disable_input(){
 function enable_input(){
 	$('#loader').hide();
 	$('#create_chart').removeAttr('disabled');
+}
+
+function change_type(){
+  var new_type = $('#type_select option:selected').val();
+  $('#filter_form .section[all!=true]').hide();
+  $('#filter_form .section[type-'+new_type+'=true]').show();
 }
 
 function add_category(){

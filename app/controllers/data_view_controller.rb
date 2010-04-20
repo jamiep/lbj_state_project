@@ -4,6 +4,15 @@ class DataViewController < ApplicationController
     
   end
 
+  def vendor_suggest
+    # TODO: todo
+    @query = params[:q]
+    return render :nothing => true if @query.nil?
+    
+    @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
+    
+  end
+
   def category_total
     @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
     @totals = @db.view('comp_obj_category/year_month?group_level=1')

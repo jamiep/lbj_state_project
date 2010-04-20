@@ -7,7 +7,7 @@
   padding:10px 0;
 }
 
-#filter_form .section.cats{
+#filter_form .section.cats, #filter_form .section.vendors{
   border: 1px solid;
   padding-left: 10px;
 }
