@@ -88,7 +88,11 @@ $(document).ready(function() {
       url = '/data_view/'+type+'_by_month';
     }
     else if(type == 'vendor'){
-      // var vendors = 
+      data.vendors = [];
+      $('#vendor_selected li').each(function(i,elem){
+        data.vendors.push(elem.innerHTML);
+      });
+      url = '/data_view/'+type+'_by_year';
     }
     new_chart(url, data);
   });

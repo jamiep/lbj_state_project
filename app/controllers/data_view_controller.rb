@@ -143,4 +143,74 @@ class DataViewController < ApplicationController
     render :json => @response
   end
 
+  def vendor_by_year
+    @vendors = params[:vendors].map { |v| v + "\n" }
+    
+    @db = CouchRest.database!("http://texasgov.info:5984/tceq_data")
+    
+    @points = {}
+    @years = []
+    
+    for vendor in @vendors
+      puts vendor
+      @by_year = @db.view('vendor/year_month_day', {
+        :group_level => 2,
+        :startkey => [vendor, 0],
+        :endkey => [vendor, 9999]
+      })
+      puts @by_year
+      for doc in @by_year['rows']
+        @vendor = doc['key'][0]
+        @year = doc['key'][1]
+        @years.push(@year) if not @years.include? @year
+        @points[@vendor] ||= {}
+        @points[@vendor][@year] = doc['value'].to_f
+      end
+    end
+    
+    @years = @years.sort
+    
+    @data = []
+    for vendor, pset in @points
+      data = []
+      for year in @years
+        data.push pset[year] || 0
+      end
+      @data.push({
+        'name' => vendor,
+        'data' => data
+      })
+    end
+    
+    @options = {
+      :chart => {
+        :defaultSeriesType => 'column'
+      },
+      :title => { :text => 'Dollars Spent for selected Vendors per Year' },
+      :xAxis => {
+        :categories => @years,
+        :title => { :text => 'Year' }
+      },
+      :yAxis => {
+        :title => { :text => 'Dollars Spent' }
+      },
+      :series => @data,
+      :tooltip => {
+        
+      }
+    }
+    @formatter = %q{
+      function(){
+        // TODO: javascript formatter!
+      }
+    }
+    @response = {
+      :status => 'ok',
+      :options => @options,
+      :formatter => @formatter
+    }
+    
+    render :json => @response
+  end
+
 end
