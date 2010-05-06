@@ -24,6 +24,8 @@ class DataViewController < ApplicationController
     @totals = @db.view('comp_obj_category/year_month', {
       :group_level => 1
     })
+    return render :json => @totals if(params[:raw])
+    
     @data = []
     @cats = []
     for doc in @totals['rows']
@@ -44,6 +46,8 @@ class DataViewController < ApplicationController
       :group_level => 2,
       :reverse => true
     })
+    return render :json => @by_year if(params[:raw])
+    
     @points = {}
     @months = %w{ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec }
     @years = []
@@ -101,6 +105,8 @@ class DataViewController < ApplicationController
       :group_level => 3,
       :reverse => true
     })
+    return render :json => @by_year if(params[:raw])
+    
     @points = {}
     @months = %w{ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec }
     
@@ -151,14 +157,17 @@ class DataViewController < ApplicationController
     @points = {}
     @years = []
     
+    @raw = []
+    
     for vendor in @vendors
-      puts vendor
       @by_year = @db.view('vendor/year_month_day', {
         :group_level => 2,
         :startkey => [vendor, 0],
         :endkey => [vendor, 9999]
       })
       puts @by_year
+      @raw.push({ :key => [vendor], :value => @by_year['rows'] }) if(params[:raw])
+      
       for doc in @by_year['rows']
         @vendor = doc['key'][0]
         @year = doc['key'][1]
@@ -166,6 +175,11 @@ class DataViewController < ApplicationController
         @points[@vendor] ||= {}
         @points[@vendor][@year] = doc['value'].to_f
       end
+    end
+    if(params[:raw])
+      return render :json => {
+        :rows => @raw
+      }
     end
     
     @years = @years.sort
